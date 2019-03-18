@@ -1,0 +1,613 @@
+# <!=Copyright (C) 2018 Rara Theme
+# This file is distributed under the GNU General Public License v2 or later.=!>
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Halcyon 1.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2018-07-06 11:22+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: Loco https://localise.biz/\n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:21
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: archive.php:49 index.php:53
+msgid "Previous"
+msgstr ""
+
+#: archive.php:50 index.php:54
+msgid "Next"
+msgstr ""
+
+#: archive.php:51 index.php:55
+msgid "Page"
+msgstr ""
+
+#: comments.php:39
+#, php-format
+msgctxt "comments title"
+msgid "1 Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:58
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:61
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:62
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:77
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:49
+msgid "Copyright &copy; "
+msgstr ""
+
+#: footer.php:49
+msgid "Y"
+msgstr ""
+
+#: footer.php:50
+#, php-format
+msgctxt "home link"
+msgid "%s"
+msgstr ""
+
+#: footer.php:51
+#, php-format
+msgctxt "author link"
+msgid "%s"
+msgstr ""
+
+#: footer.php:51
+msgid "https://raratheme.com/wordpress-themes/halcyon/"
+msgstr ""
+
+#: footer.php:52
+#, php-format
+msgctxt "WordPress link"
+msgid "Powered by: %s"
+msgstr ""
+
+#: footer.php:52
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: functions.php:55
+msgid "Primary"
+msgstr ""
+
+#: functions.php:146
+msgid "Right Sidebar"
+msgstr ""
+
+#: functions.php:156
+msgid "Footer One"
+msgstr ""
+
+#: functions.php:166
+msgid "Footer Two"
+msgstr ""
+
+#: functions.php:176
+msgid "Footer Three"
+msgstr ""
+
+#: header.php:34
+#, php-format
+msgctxt "Social link label"
+msgid "<span>%s</span>"
+msgstr ""
+
+#: header.php:34
+msgid "Find Me On"
+msgstr ""
+
+#: search.php:19
+#, php-format
+msgctxt "search query"
+msgid "Search Results for: %s"
+msgstr ""
+
+#: searchform.php:11 searchform.php:12
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:12
+msgctxt "placeholder"
+msgid "Search"
+msgstr ""
+
+#: inc/customizer.php:18
+msgid "Choose Post"
+msgstr ""
+
+#: inc/customizer.php:30
+msgid "Default Settings"
+msgstr ""
+
+#: inc/customizer.php:31
+msgid "Default section provided by wordpress customizer."
+msgstr ""
+
+#: inc/customizer.php:50
+msgid "Slider Settings"
+msgstr ""
+
+#: inc/customizer.php:68
+msgid "Enable Banner Slider"
+msgstr ""
+
+#: inc/customizer.php:86
+msgid "Enable Slider Auto Transition"
+msgstr ""
+
+#: inc/customizer.php:104
+msgid "Enable Slider Loop"
+msgstr ""
+
+#: inc/customizer.php:122
+msgid "Enable Slider Control"
+msgstr ""
+
+#: inc/customizer.php:140
+msgid "Enable Slider Pager"
+msgstr ""
+
+#: inc/customizer.php:158
+msgid "Enable Slider Caption"
+msgstr ""
+
+#: inc/customizer.php:176
+msgid "Choose Slider Animation"
+msgstr ""
+
+#: inc/customizer.php:180
+msgid "Fade"
+msgstr ""
+
+#: inc/customizer.php:181
+msgid "Slide"
+msgstr ""
+
+#: inc/customizer.php:198
+msgid "Slider Speed"
+msgstr ""
+
+#: inc/customizer.php:216
+msgid "Slider Pause"
+msgstr ""
+
+#: inc/customizer.php:226 inc/extras.php:201
+msgid "Read Post"
+msgstr ""
+
+#: inc/customizer.php:234
+msgid "Slider Read More"
+msgstr ""
+
+#: inc/customizer.php:245
+msgid "Featured Posts Settings"
+msgstr ""
+
+#: inc/customizer.php:263
+msgid "Enable Featured Post Section"
+msgstr ""
+
+#: inc/customizer.php:281
+msgid "Featured Section Title"
+msgstr ""
+
+#: inc/customizer.php:299
+msgid "Select Featured Post One"
+msgstr ""
+
+#: inc/customizer.php:318
+msgid "Select Featured Post Two"
+msgstr ""
+
+#: inc/customizer.php:337
+msgid "Select Featured Post Three"
+msgstr ""
+
+#: inc/customizer.php:349
+msgid "Social Settings"
+msgstr ""
+
+#: inc/customizer.php:350
+msgid "Leave blank if you do not want to show the social link."
+msgstr ""
+
+#: inc/customizer.php:368
+msgid "Enable Social Links"
+msgstr ""
+
+#: inc/customizer.php:386 inc/extras.php:84 inc/widget-social-links.php:57
+#: inc/widget-social-links.php:106
+msgid "Facebook"
+msgstr ""
+
+#: inc/customizer.php:404 inc/extras.php:86 inc/widget-social-links.php:59
+#: inc/widget-social-links.php:112
+msgid "Twitter"
+msgstr ""
+
+#: inc/customizer.php:422 inc/extras.php:88 inc/widget-social-links.php:61
+#: inc/widget-social-links.php:118
+msgid "Pinterest"
+msgstr ""
+
+#: inc/customizer.php:440 inc/extras.php:90 inc/widget-social-links.php:63
+#: inc/widget-social-links.php:124
+msgid "Instagram"
+msgstr ""
+
+#: inc/customizer.php:458 inc/extras.php:92 inc/widget-social-links.php:65
+#: inc/widget-social-links.php:130
+msgid "RSS"
+msgstr ""
+
+#: inc/customizer.php:476 inc/extras.php:94 inc/widget-social-links.php:67
+#: inc/widget-social-links.php:136
+msgid "Dribble"
+msgstr ""
+
+#: inc/customizer.php:494 inc/extras.php:96 inc/widget-social-links.php:142
+msgid "LinkedIn"
+msgstr ""
+
+#: inc/customizer.php:512 inc/extras.php:98 inc/widget-social-links.php:71
+#: inc/widget-social-links.php:148
+msgid "Google Plus"
+msgstr ""
+
+#: inc/customizer.php:523
+msgid "Custom CSS Settings"
+msgstr ""
+
+#: inc/customizer.php:541
+msgid "Custom Css"
+msgstr ""
+
+#: inc/customizer.php:543
+msgid "Put your custom CSS"
+msgstr ""
+
+#: inc/extras.php:119
+msgid "Name*"
+msgstr ""
+
+#: inc/extras.php:121
+msgid "Email*"
+msgstr ""
+
+#: inc/extras.php:123
+msgid "Website"
+msgstr ""
+
+#: inc/extras.php:135
+msgid "Comment*"
+msgstr ""
+
+#: inc/extras.php:136
+msgid "Send a Comment"
+msgstr ""
+
+#: inc/extras.php:137
+#, php-format
+msgctxt "reply"
+msgid "Send a Comment to %s"
+msgstr ""
+
+#: inc/extras.php:168
+#, php-format
+msgctxt "comment author link"
+msgid ""
+"<b class=\"fn\" itemprop=\"creator\" itemscope itemtype=\"http://schema."
+"org/Person\">%s</b>"
+msgstr ""
+
+#: inc/extras.php:171
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#. translators: 1: date, 2: time
+#: inc/extras.php:180
+#, php-format
+msgctxt "comment date"
+msgid "%1$s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/extras.php:227 inc/extras.php:337 inc/template-tags.php:55
+msgid ", "
+msgstr ""
+
+#: inc/info.php:11
+msgid "Information Links"
+msgstr ""
+
+#: inc/info.php:21
+msgid "Need help?"
+msgstr ""
+
+#: inc/info.php:22
+msgid "View demo"
+msgstr ""
+
+#: inc/info.php:22 inc/info.php:23 inc/info.php:24 inc/info.php:25
+msgid "here"
+msgstr ""
+
+#: inc/info.php:23
+msgid "View documentation"
+msgstr ""
+
+#: inc/info.php:24
+msgid "Support ticket"
+msgstr ""
+
+#: inc/info.php:25
+msgid "More Details"
+msgstr ""
+
+#: inc/info.php:29
+msgid "About Halcyon"
+msgstr ""
+
+#: inc/info.php:42
+msgid "Pro Version"
+msgstr ""
+
+#: inc/metabox.php:13
+msgid "Sidebar Layout"
+msgstr ""
+
+#: inc/metabox.php:23
+msgid "Right sidebar (default)"
+msgstr ""
+
+#: inc/metabox.php:28
+msgid "No sidebar"
+msgstr ""
+
+#: inc/metabox.php:40
+msgid "Choose Sidebar Template"
+msgstr ""
+
+#: inc/template-tags.php:24 inc/template-tags.php:27
+#, php-format
+msgctxt "post date"
+msgid "%s"
+msgstr ""
+
+#: inc/template-tags.php:44
+msgid "[ "
+msgstr ""
+
+#: inc/template-tags.php:44
+msgid " ]"
+msgstr ""
+
+#: inc/template-tags.php:57
+#, php-format
+msgctxt "tag list"
+msgid "Tags: %1$s"
+msgstr ""
+
+#: inc/template-tags.php:65
+msgctxt "post author"
+msgid "By "
+msgstr ""
+
+#: inc/template-tags.php:71
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/template-tags.php:71
+msgid "1 Comment"
+msgstr ""
+
+#: inc/template-tags.php:71
+msgctxt "no of comments"
+msgid "% Comments"
+msgstr ""
+
+#. translators: %s: Name of current post
+#: inc/template-tags.php:86 template-parts/content-page.php:35
+#, php-format
+msgctxt "Name of current post"
+msgid "Edit %s"
+msgstr ""
+
+#: inc/widget-featured-post.php:25
+msgid "RARA: Featured Post"
+msgstr ""
+
+#: inc/widget-featured-post.php:26
+msgid "A Featured Post Widget"
+msgstr ""
+
+#: inc/widget-featured-post.php:80
+msgid "--choose--"
+msgstr ""
+
+#: inc/widget-featured-post.php:100
+msgid "Posts"
+msgstr ""
+
+#: inc/widget-featured-post.php:110 inc/widget-popular-post.php:114
+#: inc/widget-recent-post.php:113 inc/widget-social-links.php:101
+msgid "Title"
+msgstr ""
+
+#: inc/widget-featured-post.php:115
+msgid "Profession"
+msgstr ""
+
+#: inc/widget-featured-post.php:121 inc/widget-popular-post.php:130
+#: inc/widget-recent-post.php:129
+msgid "Show Post Thumbnail"
+msgstr ""
+
+#: inc/widget-popular-post.php:25
+msgid "RARA: Popular Post"
+msgstr ""
+
+#: inc/widget-popular-post.php:26
+msgid "A Popular Post Widget"
+msgstr ""
+
+#: inc/widget-popular-post.php:40 inc/widget-popular-post.php:105
+#: inc/widget-popular-post.php:154
+msgid "Popular Posts"
+msgstr ""
+
+#: inc/widget-popular-post.php:75 inc/widget-recent-post.php:74
+#, php-format
+msgctxt "post date"
+msgid "%1$s"
+msgstr ""
+
+#: inc/widget-popular-post.php:84 inc/widget-recent-post.php:83
+#: template-parts/content.php:63
+msgid "Read More"
+msgstr ""
+
+#: inc/widget-popular-post.php:119 inc/widget-recent-post.php:118
+msgid "Short Description"
+msgstr ""
+
+#: inc/widget-popular-post.php:124 inc/widget-recent-post.php:123
+msgid "Number of Posts"
+msgstr ""
+
+#: inc/widget-popular-post.php:135 inc/widget-recent-post.php:134
+msgid "Show Post Date"
+msgstr ""
+
+#: inc/widget-recent-post.php:25
+msgid "RARA: Recent Post"
+msgstr ""
+
+#: inc/widget-recent-post.php:26
+msgid "A Recent Post Widget"
+msgstr ""
+
+#: inc/widget-recent-post.php:40 inc/widget-recent-post.php:104
+#: inc/widget-recent-post.php:153
+msgid "Recent Posts"
+msgstr ""
+
+#: inc/widget-social-links.php:25
+msgid "RARA: Social Links"
+msgstr ""
+
+#: inc/widget-social-links.php:26
+msgid "A Social Links Widget"
+msgstr ""
+
+#: inc/widget-social-links.php:40 inc/widget-social-links.php:88
+#: inc/widget-social-links.php:168
+msgid "Social"
+msgstr ""
+
+#: inc/widget-social-links.php:69
+msgid "Linkedin"
+msgstr ""
+
+#: inc/widget-social-links.php:108 inc/widget-social-links.php:114
+#: inc/widget-social-links.php:120 inc/widget-social-links.php:126
+#: inc/widget-social-links.php:132 inc/widget-social-links.php:138
+#: inc/widget-social-links.php:144 inc/widget-social-links.php:150
+msgid "Leave blank if you do not want to show."
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:21
+#, php-format
+msgctxt "add new post link"
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:25
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:31
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:24 template-parts/content.php:52
+msgid "Pages:"
+msgstr ""
+
+#. translators: %s: Name of current post.
+#: template-parts/content.php:37
+#, php-format
+msgctxt "Name of current post"
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Halcyon"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Halcyon is a modern and clean WordPress theme designed for a blog or a "
+"website. The large featured slider with advance slider options makes this "
+"theme a great choice for photographers, or any users who want to share their "
+"visuals in a bold way. The three footer widget areas offer plenty of space "
+"for any secondary information, and striking typography makes the content "
+"look stunning. The Theme has a built-in Recent Posts widget, Popular Posts "
+"widget, Social Link Widget and Author widget. It features full width page "
+"option, SEO friendly structure, custom logo support and social media links. "
+"The theme is responsive and scales beautifully with various screen sizes "
+"while maintaining the text readability and image quality. The theme is also "
+"translation ready."
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://raratheme.com/wordpress-themes/halcyon/"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Rara Theme"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://raratheme.com/"
+msgstr ""

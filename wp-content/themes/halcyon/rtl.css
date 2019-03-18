@@ -1,0 +1,234 @@
+/*
+Theme Name: Halcyon
+
+Adding support for language written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right_to_Left_Language_Support
+
+*/
+
+body {
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+.main-navigation ul ul,
+.main-navigation ul ul ul {
+    display: none;
+    padding: 0;
+}
+
+.main-navigation ul li:hover > ul {
+    left: auto;
+    right:0;
+    display: block;
+}
+
+.main-navigation ul ul li:hover > ul {
+    left: auto;
+    right: 100%;
+    display: block;
+}
+
+.site-header .header-top .social-network-section .form-section{
+	float: left;
+}
+
+.site-header .header-top .social-network-section .social-networks{
+	margin-left: 0;
+	margin-right: 30px;
+}
+
+.site-header .header-top .social-network-section{
+	float: left;
+}
+
+.site-header .header-top .social-network-section span{
+	display: inline-block;
+	float: right;
+}
+
+.site-header .header-top .social-network-section .form-section{
+	padding-left: 0;
+	padding-right: 16px;
+	margin-left: 0;
+	margin-right: 29px;
+}
+
+.site-header .header-top .social-network-section .form-section .example form{
+	right: auto;
+	left: 0;
+}
+
+.site-header .header-top .social-network-section .social-networks{
+	margin-right: 0;
+}
+
+.site-header .header-top .social-network-section .social-networks li{
+	float: right;
+	margin-left: 0;
+	margin-right: 24px;
+}
+
+.site-header .header-top .social-network-section .social-networks li:first-child{
+	margin-left: 0;
+}
+
+.main-navigation ul{
+	padding: 0;
+}
+
+.site-branding{
+	float: right;
+}
+
+.main-navigation{
+	float: left;
+}
+
+.top-section .column{
+	float: right;
+}
+
+.top-section .post .category{
+	display: inline-block;
+}
+
+.top-section .post .category a{
+	display: inline-block;
+}
+
+.widget-area .widget.widget_search form{
+	border: 1px solid #dde1e5;
+	border-right:1px solid #dde1e5;
+	border-left: 0;
+
+}
+
+.widget-area .widget.widget_search form input[type="search"]{
+	float: right;
+}
+
+.widget-area .widget.widget_search form input[type="submit"]{
+	float: left;
+}
+
+.widget-area .widget.widget_categories ul li, .widget-area .widget.widget_archive ul li{
+	text-align: left;
+}
+
+.widget-area .widget.widget_categories ul li a, .widget-area .widget.widget_archive ul li a{
+	float: right;
+}
+
+.widget-area .widget_tag_cloud a{
+	margin-right: 0;
+	margin-left:4px;
+}
+
+.widget-area .widget_tag_cloud .tagcloud{
+	text-align: right !important;
+}
+
+.blog .post .entry-content{
+	text-align: right;
+}
+
+#primary .post .tags a{
+	display: inline-block;
+}
+
+.post .bottom-content .entry-meta{
+	float: right;
+}
+
+.post .bottom-content .read-more, .widget-area .widget.widget_halcyon_recent_post .read-more, .widget-area .widget.widget_halcyon_popular_post .read-more{
+
+}
+
+.post .bottom-content .read-more{
+	margin-left: 97px;
+	margin-right: 0;
+}
+
+.post .bottom-content .entry-meta span a,
+.post .entry-meta span{
+	display: inline-block;
+}
+
+.site-footer .column{
+	float: right;
+}
+
+.site-footer .widget .post-thumbnail{
+	float: right;
+	margin-right: 0;
+	margin-left: 11px;
+}
+
+.site-footer .widget .post .entry-header{
+	text-align: right;
+}
+
+#primary .post .entry-header::after{
+
+}
+
+.single-post #primary .post .entry-header,
+.single-post #primary .post .entry-content,
+.site-content #primary .page .entry-header,
+.site-content #primary .page .entry-content{
+	text-align: right;
+}
+
+.post .entry-title{
+	padding-right: 0;
+	padding-left: 20px;
+}
+
+.single-post #primary .author-section .avatar{
+	float: right;
+	margin-right: 0;
+	margin-left: 30px;
+}
+
+.single-post #primary .comments-area .avatar.photo{
+	float: right;
+	margin-right: 0;
+	margin-left: 20px;
+}
+
+.single-post #primary .comments-area .comment-content,
+.single-post #primary .comments-area .reply{
+	margin-left: 0;
+	margin-right: 106px;
+}
+
+.single-post #primary .post blockquote{
+	border-left: 0;
+	border-right: 1px solid #1bbc9b;
+}
+
+.single-post #primary ul li{
+	background-position: 100%  13px;
+	padding-left: 0;
+	padding-right: 13px;
+}
+
+.single-post #primary form .radio-section li{
+	float: right;
+	margin-left: 0;
+	margin-right: 20px;
+}
+
+.single-post #primary form .radio-section li:first-child{
+	margin-right: 0;
+}
+
+@media only screen and (max-width: 991px){
+	.site-branding{
+		float: left;
+	}
+}

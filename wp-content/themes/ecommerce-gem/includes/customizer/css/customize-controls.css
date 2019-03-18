@@ -1,0 +1,9 @@
+.customize-control-info h2{
+	border:1px solid #e54242; 
+	padding:5px; 
+	color:#e54242; 
+	text-transform:uppercase; 
+	text-align: center; 
+	font-size: 15px; 
+	font-weight: normal;
+}

@@ -1,0 +1,1610 @@
+# Translation of Themes - eCommerce Gem in Vietnamese
+# This file is distributed under the same license as the Themes - eCommerce Gem package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2018-10-23 04:59:12+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: vi_VN\n"
+"Project-Id-Version: Themes - eCommerce Gem\n"
+
+#. Description of the theme
+msgid "eCommerce Gem is a free multipurpose e-Commerce WordPress theme suitable for eCommerce websites of any store type. The theme smoothly integrates WooCommerce, one of the best e-commerce plugin and is perfectly designed for its pages. Main features of the theme are product search with category select, multiple sections on the front page, full width easy to use slider, latest and featured product carousel, call to actions, advertisement section, banners and more. eCommerce Gem is perfect for stores such as book, mobile, bags, medical, jewelry, construction materials, cosmetics, clothing and all type of online shops. It has multipurpose layouts so can be used for business, corporate, portfolio, digital agency, blog, and all creative website development. View demo at https://www.prodesigns.com/wordpress-themes/demo/ecommerce-gem"
+msgstr "eCommerce Gem là một chủ đề WordPress thương mại điện tử đa năng miễn phí phù hợp cho các trang web thương mại điện tử thuộc bất kỳ loại cửa hàng nào. Chủ đề này tích hợp WooCommerce, một trong những plugin thương mại điện tử tốt nhất và được thiết kế hoàn hảo cho các trang của nó. Các tính năng chính của chủ đề là tìm kiếm sản phẩm với danh mục lựa chọn, nhiều phần trên trang đầu, chiều rộng đầy đủ dễ sử dụng thanh trượt, băng chuyền sản phẩm mới nhất và nổi bật, gọi hành động, phần quảng cáo, biểu ngữ và hơn thế nữa. Thương mại điện tử Gem là hoàn hảo cho các cửa hàng như sách, điện thoại di động, túi xách, y tế, đồ trang sức, vật liệu xây dựng, mỹ phẩm, quần áo và tất cả các loại cửa hàng trực tuyến. Nó có bố cục đa năng nên có thể được sử dụng cho doanh nghiệp, công ty, danh mục đầu tư, đại lý kỹ thuật số, blog và tất cả các trang web phát triển sáng tạo. Xem bản trình diễn tại https://www.prodesigns.com/wordpress-themes/demo/ecommerce-gem"
+
+#. Theme Name of the theme
+#: includes/theme-info/class-about.php:761
+msgid "eCommerce Gem"
+msgstr "eCommerce Gem"
+
+#: includes/widgets/contact.php:211 includes/widgets/features.php:190
+msgid "ET-LINE icons are used for icon of each blocks. You can find icon code %1$shere%2$s."
+msgstr "ET-LINE biểu tượng được sử dụng cho biểu tượng của từng khối. Bạn có thể tìm thấy mã biểu tượng %1$shere%2$s."
+
+#: includes/template-functions.php:274
+msgid "Video Tab For WooCommerce"
+msgstr "Video Tab For WooCommerce"
+
+#: template-parts/home-widgets.php:39
+msgid "No widgets found. Please add widgets to Home Page Widget Area."
+msgstr "Không tìm thấy tiện ích nào. Vui lòng thêm tiện ích vào Khu vực tiện ích trang chủ."
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/home-widgets.php:26
+msgid "No widgets found. Please add widgets to Home Page Widget Area. <a href=\"%1$s\">Get started here</a>."
+msgstr "Không tìm thấy tiện ích nào. Vui lòng thêm tiện ích vào Khu vực tiện ích trang chủ. <a href=\"%1$s\">hãy bắt đầu từ đây</a>."
+
+#: includes/customizer/options/header.php:358
+msgid "Select Category Text"
+msgstr "Chọn văn bản danh mục"
+
+#: includes/customizer/options/header.php:341
+msgid "Search Products Text"
+msgstr "Tìm kiếm sản phẩm"
+
+#: includes/customizer/options/header.php:325
+msgid "Show Product Search (at Top Header)"
+msgstr "Hiển thị Tìm kiếm Sản phẩm (tại Tiêu đề Hàng đầu)"
+
+#: includes/customizer/options/header.php:310
+msgid "Product Search Options"
+msgstr "Tùy chọn tìm kiếm sản phẩm"
+
+#: includes/customizer/core.php:72
+msgid "Search Products ..."
+msgstr "Tìm kiếm sản phẩm ..."
+
+#: includes/widgets/featured-categories.php:261
+msgid "Show Product Counts"
+msgstr "Hiển thị số lượng sản phẩm"
+
+#: includes/widgets/featured-categories.php:255
+msgid "View Detail Text:"
+msgstr "Xem văn bản chi tiết:"
+
+#: includes/widgets/featured-categories.php:250
+msgid "Categories selected here will be used as featured category at frontend."
+msgstr "Các danh mục được chọn tại đây sẽ được sử dụng làm danh mục nổi bật ở lối vào."
+
+#: includes/widgets/featured-categories.php:244
+msgid "No product categories found"
+msgstr "Không tìm thấy danh mục sản phẩm"
+
+#: includes/widgets/featured-categories.php:192
+msgid "View Details"
+msgstr "Xem chi tiết"
+
+#: includes/widgets/featured-categories.php:23
+msgid "eC-Gem: Featured Categories"
+msgstr "eC-Gem: Ngành nghề đặc trưng"
+
+#: includes/widgets/featured-categories.php:20
+msgid "Widget to display featured categories of Woo-Commerce with carousel"
+msgstr "Tiện ích hiển thị các danh mục nổi bật của Woo-Commerce với băng chuyền"
+
+#: includes/template-functions.php:269
+msgid "YITH WooCommerce Wishlist"
+msgstr "YITH WooCommerce Wishlist"
+
+#: includes/customizer/options/shop.php:135
+msgid "Disable Related Products at Product Detail Page"
+msgstr "Vô hiệu hóa các sản phẩm liên quan tại trang chi tiết sản phẩm"
+
+#: includes/customizer/options/shop.php:119
+msgid "Enable Image Zoom at Product Detail Page"
+msgstr "Bật thu phóng hình ảnh tại trang chi tiết sản phẩm"
+
+#: includes/customizer/options/shop.php:103
+msgid "Enable View Detail Icon at Product Pages"
+msgstr "Bật biểu tượng chi tiết chế độ xem tại trang sản phẩm"
+
+#: includes/customizer/options/header.php:298
+msgid "Wishlist Icon"
+msgstr "Biểu tượng Wishlist"
+
+#: includes/customizer/options/header.php:281
+msgid "Show Wishlist Icon (Works if YITH Wishlist plugin is activated)"
+msgstr "Hiển thị biểu tượng Danh sách yêu thích (Hoạt động nếu plugin YITH Wishlist được kích hoạt)"
+
+#: includes/widgets/featured-categories.php:266
+#: includes/widgets/latest-products.php:243
+msgid "Disable Carousel Mode"
+msgstr "Tắt chế độ băng chuyền"
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content.php:40
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Tiếp tục đọc<span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#. translators: %s: Name of current post
+#: template-parts/content-page.php:43
+msgid "Edit %s"
+msgstr "Chỉnh sửa %s"
+
+#: template-parts/content.php:51 template-parts/content-page.php:31
+msgid "Pages:"
+msgstr "Trang:"
+
+#. translators: %s: Name of current post.
+#: template-parts/content-page.php:27
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Tiếp tục đọc %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: template-parts/content-none.php:44
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Không thấy nội dung tìm kiếm. Hãy thử tìm kiếm khác."
+
+#: template-parts/content-none.php:38
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Xin lỗi, nhưng không có kết quả phù hợp với cụm từ tìm kiếm của bạn. Vui lòng thử lại với một số từ khóa khác."
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:25
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Bạn đã sẵn sàng để đăng bài viết đầu tiên của bạn? <a href=\"%1$s\">hãy bắt đầu từ đây</a>."
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Không có kết quả"
+
+#: includes/widgets/social-links.php:100
+msgid "Social menu is not set. Please create menu and assign it to Social Theme Location."
+msgstr "Menu xã hội chưa được đặt. Vui lòng tạo trình đơn và chỉ định cho Địa điểm chủ đề xã hội."
+
+#: includes/widgets/social-links.php:27
+msgid "eC-Gem: Social"
+msgstr "eC-Gem: Xã hội"
+
+#: includes/widgets/social-links.php:25
+msgid "Social Icons Widget"
+msgstr "Tiện ích biểu tượng xã hội"
+
+#: includes/widgets/newsletter.php:147
+msgid "Shortcode of MailChimp or other mailing applications can be used."
+msgstr "Có thể sử dụng shortcode của MailChimp hoặc các ứng dụng gửi thư khác."
+
+#: includes/widgets/newsletter.php:144
+msgid "Newsletter Shortcode:"
+msgstr "Bản tin Shortcode:"
+
+#: includes/widgets/newsletter.php:57
+msgid "newsletter"
+msgstr "Bản tin"
+
+#: includes/widgets/newsletter.php:26
+msgid "eC-Gem: Newsletter"
+msgstr "eC-Gem: Bản tin"
+
+#: includes/widgets/newsletter.php:24
+msgid "Newsletter Widget"
+msgstr "Tiện ích bản tin"
+
+#: includes/widgets/latest-products.php:262
+msgid "Featured"
+msgstr "Nổi bật"
+
+#: includes/widgets/latest-products.php:261
+msgid "Latest"
+msgstr "Muộn nhất"
+
+#: includes/widgets/latest-products.php:236
+msgid "Number of Products:"
+msgstr "Số lượng sản phẩm:"
+
+#: includes/widgets/latest-products.php:223
+msgid "Product Type:"
+msgstr "Loại sản phẩm:"
+
+#: includes/widgets/latest-products.php:23
+msgid "eC-Gem: Products Carousel"
+msgstr "eC-Gem: Sản phẩm Carousel"
+
+#: includes/widgets/latest-products.php:20
+msgid "Widget to display latest product or featured products of Woo-Commerce with carousel"
+msgstr "Widget để hiển thị sản phẩm mới nhất hoặc các sản phẩm nổi bật của Woo-Commerce với băng chuyền"
+
+#: includes/widgets/latest-news.php:196
+msgid "Hide Posted Date"
+msgstr "Ẩn Ngày đăng"
+
+#: includes/widgets/latest-news.php:189
+msgid "Excerpt Length:"
+msgstr "Độ dài trích đoạn:"
+
+#: includes/widgets/latest-news.php:183
+msgid "Enter category id seperated with comma. Posts from these categories will be excluded from latest post listing."
+msgstr "Nhập id danh mục được phân tách bằng dấu phẩy. Các bài đăng từ các danh mục này sẽ bị loại trừ khỏi danh sách bài đăng mới nhất."
+
+#: includes/widgets/latest-news.php:180
+msgid "Exclude Categories:"
+msgstr "Loại trừ danh mục:"
+
+#: includes/widgets/latest-news.php:174
+#: includes/widgets/latest-products.php:216
+msgid "All Categories"
+msgstr "Tất cả danh mục"
+
+#: includes/widgets/latest-news.php:164
+#: includes/widgets/featured-categories.php:207
+#: includes/widgets/latest-products.php:206
+msgid "Select Category:"
+msgstr "Chọn loại:"
+
+#: includes/widgets/latest-news.php:22
+msgid "eC-Gem: Latest News"
+msgstr "eC-Gem: Tin mới nhất"
+
+#: includes/widgets/latest-news.php:19
+msgid "Widget to dispaly latest posts with thumbnail, title, short content and read more link"
+msgstr "Widget để hiển thị các bài đăng mới nhất với hình thu nhỏ, tiêu đề, nội dung ngắn và đọc thêm liên kết"
+
+#: includes/widgets/features.php:241
+msgid "Feature #3"
+msgstr "Tính năng đ #3"
+
+#: includes/widgets/features.php:218
+msgid "Feature #2"
+msgstr "Tính năng đ #2"
+
+#: includes/widgets/features.php:212 includes/widgets/features.php:235
+#: includes/widgets/features.php:258
+msgid "Short Description:"
+msgstr "Mô tả ngắn:"
+
+#: includes/widgets/features.php:195
+msgid "Feature #1"
+msgstr "Tính năng đ #1"
+
+#: includes/widgets/features.php:21
+msgid "eC-Gem: Features"
+msgstr "eC-Gem: Tính năng đ"
+
+#: includes/widgets/features.php:19
+msgid "Widget to display features with icon and description including one main image."
+msgstr "Widget để hiển thị các tính năng với biểu tượng và mô tả bao gồm một hình ảnh chính."
+
+#: includes/widgets/cta.php:179
+msgid "Purchase Now"
+msgstr "Mua ngay"
+
+#: includes/widgets/cta.php:27
+msgid "eC-Gem: CTA"
+msgstr "eC-Gem: CTA"
+
+#: includes/widgets/cta.php:25
+msgid "Call To Action Widget"
+msgstr "Tiện ích gọi hành động"
+
+#: includes/widgets/contact.php:264
+msgid "Block #4"
+msgstr "Khối số 4"
+
+#: includes/widgets/contact.php:248
+msgid "Block #3"
+msgstr "Khối số 3"
+
+#: includes/widgets/contact.php:232
+msgid "Block #2"
+msgstr "Khối số 2"
+
+#: includes/widgets/contact.php:226 includes/widgets/contact.php:242
+#: includes/widgets/contact.php:258 includes/widgets/contact.php:274
+msgid "Text:"
+msgstr "Bản văn:"
+
+#: includes/widgets/contact.php:220 includes/widgets/contact.php:236
+#: includes/widgets/contact.php:252 includes/widgets/contact.php:268
+#: includes/widgets/features.php:199 includes/widgets/features.php:222
+#: includes/widgets/features.php:245
+msgid "Icon:"
+msgstr "Biểu tượng:"
+
+#: includes/widgets/contact.php:216
+msgid "Block #1"
+msgstr "Khối số 1"
+
+#: includes/widgets/contact.php:22
+msgid "eC-Gem: Contact"
+msgstr "eC-Gem: Tiếp xúc"
+
+#: includes/widgets/contact.php:20
+msgid "Widget to display contact informations like address, email and phone with icon. Recommended to use in footer or sidebar only"
+msgstr "Widget để hiển thị thông tin liên lạc như địa chỉ, email và điện thoại với biểu tượng. Được đề xuất chỉ sử dụng ở chân trang hoặc thanh bên"
+
+#: includes/widgets/advertisement.php:369
+msgid "Style Two"
+msgstr "Phong cách hai"
+
+#: includes/widgets/advertisement.php:368
+msgid "Style One"
+msgstr "Style One"
+
+#: includes/widgets/advertisement.php:323
+msgid "Disable overlay of the image"
+msgstr "Vô hiệu hóa lớp phủ của hình ảnh"
+
+#: includes/widgets/advertisement.php:318 includes/widgets/cta.php:246
+msgctxt "Remove Button"
+msgid "X"
+msgstr "X"
+
+#: includes/widgets/advertisement.php:317 includes/widgets/cta.php:245
+msgid "Choose Image"
+msgstr "Chọn hình ảnh"
+
+#: includes/widgets/advertisement.php:317 includes/widgets/cta.php:245
+msgid "Select Background Image"
+msgstr "Chọn hình nền"
+
+#: includes/widgets/advertisement.php:317 includes/widgets/cta.php:245
+msgid "Upload"
+msgstr "Tải lên"
+
+#: includes/widgets/advertisement.php:315 includes/widgets/cta.php:243
+msgid "Preview"
+msgstr "Xem trước"
+
+#: includes/widgets/advertisement.php:311 includes/widgets/cta.php:239
+msgid "Background Image:"
+msgstr "Hình nền:"
+
+#: includes/widgets/advertisement.php:298
+msgid "Content style:"
+msgstr "Kiểu nội dung:"
+
+#: includes/widgets/advertisement.php:286
+msgid "Content Position:"
+msgstr "Vị trí nội dung:"
+
+#: includes/widgets/advertisement.php:281 includes/widgets/cta.php:233
+msgid "Primary Button URL:"
+msgstr "URL nút chính:"
+
+#: includes/widgets/advertisement.php:277 includes/widgets/cta.php:229
+msgid "Primary Button Text:"
+msgstr "Văn bản nút chính:"
+
+#: includes/widgets/advertisement.php:272 includes/widgets/cta.php:224
+msgid "Offer Text:"
+msgstr "Văn bản phiếu mua hàng:"
+
+#: includes/widgets/advertisement.php:268 includes/widgets/cta.php:220
+msgid "Offer Percent:"
+msgstr "Phần trăm ưu đãi:"
+
+#: includes/widgets/advertisement.php:264 includes/widgets/cta.php:216
+#: includes/widgets/newsletter.php:140
+msgid "Sub Title:"
+msgstr "Tiêu đề phụ:"
+
+#: includes/widgets/advertisement.php:260 includes/widgets/latest-news.php:160
+#: includes/widgets/cta.php:212 includes/widgets/featured-categories.php:202
+#: includes/widgets/contact.php:204 includes/widgets/newsletter.php:136
+#: includes/widgets/features.php:205 includes/widgets/features.php:228
+#: includes/widgets/features.php:251 includes/widgets/latest-products.php:201
+#: includes/widgets/social-links.php:94
+msgid "Title:"
+msgstr "Tiêu đề:"
+
+#: includes/widgets/advertisement.php:224
+msgid "Start Shopping"
+msgstr "Bắt đầu mua sắm"
+
+#: includes/widgets/advertisement.php:223 includes/widgets/cta.php:178
+msgid "OFF"
+msgstr "tắt"
+
+#: includes/widgets/advertisement.php:222 includes/widgets/cta.php:177
+msgid "50%"
+msgstr "50%"
+
+#: includes/widgets/advertisement.php:27
+msgid "eC-Gem: Advertisement"
+msgstr "eC-Gem: Quảng cáo"
+
+#: includes/widgets/advertisement.php:25
+msgid "Widget to display advertisement. Recommended to use in Advertisement Below Slider area"
+msgstr "Widget để hiển thị quảng cáo. Được đề xuất sử dụng trong quảng cáo bên dưới khu vực trượt"
+
+#: includes/theme-info/class-about.php:646
+msgid "Manage Plugins"
+msgstr "Quản lý plugin"
+
+#: includes/theme-info/class-about.php:638
+msgid "Great, all recommended plugins are intalled and active."
+msgstr "Tuyệt vời, tất cả các plugin được đề xuất đều được cài đặt và hoạt động."
+
+#: includes/theme-info/class-about.php:603
+msgid "Upgrade to Pro"
+msgstr "Nâng cấp lên Pro"
+
+#: includes/theme-info/class-about.php:569
+msgid "Deactivate"
+msgstr "Tắt"
+
+#: includes/theme-info/class-about.php:164
+msgid "Get started with %s"
+msgstr "Bắt đầu với %s"
+
+#: includes/theme-info/class-about.php:164
+msgid "Welcome! Thank you for choosing %1$s! To fully take advantage of the best our theme can offer please make sure you visit our %2$swelcome page%3$s."
+msgstr "Chào mừng bạn! Cảm ơn bạn về sự lựa chọn %1$s! Để tận dụng tối đa những gì tốt nhất, chủ đề của chúng tôi có thể cung cấp, hãy đảm bảo bạn truy cập vào %2$strang chào mừng%3$s."
+
+#: includes/theme-info/about.php:288
+msgid "High Priority"
+msgstr "Ưu tiên cao"
+
+#: includes/theme-info/about.php:286
+msgid "Highly experienced and dedicated support team for your help plus online chat."
+msgstr "Đội ngũ hỗ trợ có kinh nghiệm và tận tụy với sự giúp đỡ của bạn cộng với trò chuyện trực tuyến."
+
+#: includes/theme-info/about.php:285
+msgid "Support Forum"
+msgstr "Diễn đàn hỗ trợ"
+
+#: includes/theme-info/about.php:280
+msgid "Developed with high skilled SEO tools."
+msgstr "Được phát triển với các công cụ SEO có kỹ năng cao."
+
+#: includes/theme-info/about.php:279
+msgid "SEO"
+msgstr "SEO"
+
+#: includes/theme-info/about.php:274
+msgid "Option to Override existing Powerby credit of footer"
+msgstr "Tùy chọn để ghi đè tín dụng Powerby hiện tại của chân trang"
+
+#: includes/theme-info/about.php:273
+msgid "Override Footer Credit"
+msgstr "Ghi đè tín dụng chân trang"
+
+#: includes/theme-info/about.php:268
+msgid "Option to enable/disable Powerby(Designer) credit in footer"
+msgstr "Tùy chọn bật / tắt tín dụng Powerby (Designer) ở chân trang"
+
+#: includes/theme-info/about.php:267
+msgid "Hide Footer Credit"
+msgstr "Ẩn tín dụng chân trang"
+
+#: includes/theme-info/about.php:262
+msgid "Widget to display featured products in carousel mode"
+msgstr "Tiện ích để hiển thị các sản phẩm nổi bật trong chế độ băng chuyền"
+
+#: includes/theme-info/about.php:261
+msgid "Featured Product Carousel"
+msgstr "Sản phẩm nổi bật Carousel"
+
+#: includes/theme-info/about.php:255
+msgid "Widget to display latest products in carousel mode"
+msgstr "Widget để hiển thị các sản phẩm mới nhất trong chế độ băng chuyền"
+
+#: includes/theme-info/about.php:254
+msgid "Latest Product Carousel"
+msgstr "Băng chuyền sản phẩm mới nhất"
+
+#: includes/theme-info/about.php:249
+msgid "Options to change color of individual sections like top header, site title, menu, footer, etc of the site"
+msgstr "Tùy chọn để thay đổi màu sắc của các phần riêng lẻ như tiêu đề hàng đầu, tiêu đề trang web, menu, chân trang, v.v. của trang web"
+
+#: includes/theme-info/about.php:248
+msgid "Advance Color Options"
+msgstr "Tùy chọn màu nâng cao"
+
+#: includes/theme-info/about.php:243
+msgid "Option to change primary color of the site"
+msgstr "Tùy chọn để thay đổi màu cơ bản của trang web"
+
+#: includes/theme-info/about.php:242
+msgid "Primary Color Option"
+msgstr "Tùy chọn màu chính"
+
+#: includes/theme-info/about.php:239
+msgid "100+"
+msgstr "100+"
+
+#: includes/theme-info/about.php:237
+msgid "Google fonts options for changing the overall site fonts"
+msgstr "Các tùy chọn phông chữ của Google để thay đổi phông chữ trang web tổng thể"
+
+#: includes/theme-info/about.php:236
+msgid "Google Fonts"
+msgstr "Phông Google"
+
+#: includes/theme-info/about.php:232 includes/theme-info/about.php:250
+#: includes/theme-info/about.php:269 includes/theme-info/about.php:275
+msgid "no"
+msgstr "Không"
+
+#: includes/theme-info/about.php:231
+msgid "Supports Slider Revolution, Layer Slider, Hero Slider, etc."
+msgstr "Hỗ trợ cuộc cách mạng trượt, lớp trượt, thanh trượt anh hùng, v.v."
+
+#: includes/theme-info/about.php:230
+msgid "Slider Support"
+msgstr "Hỗ trợ thanh trượt"
+
+#: includes/theme-info/about.php:225 includes/theme-info/about.php:226
+#: includes/theme-info/about.php:233 includes/theme-info/about.php:244
+#: includes/theme-info/about.php:245 includes/theme-info/about.php:251
+#: includes/theme-info/about.php:256 includes/theme-info/about.php:257
+#: includes/theme-info/about.php:263 includes/theme-info/about.php:264
+#: includes/theme-info/about.php:270 includes/theme-info/about.php:276
+#: includes/theme-info/about.php:287
+msgid "yes"
+msgstr "Có"
+
+#: includes/theme-info/about.php:224
+msgid "Theme supports/works with WooCommerce plugin"
+msgstr "Hỗ trợ chủ đề / làm việc với plugin WooCommerce"
+
+#: includes/theme-info/about.php:223
+msgid "WooCommerce Ready"
+msgstr "Sẵn sàng WooCommerce"
+
+#: includes/theme-info/about.php:212
+msgid "About child theme"
+msgstr "Giới thiệu về chủ đề con"
+
+#: includes/theme-info/about.php:211
+msgid "If you want to customize theme file, you should use child theme rather than modifying theme file itself."
+msgstr "If you want to format the files, you should use the theme thay vì thay đổi bản thân file theme."
+
+#: includes/theme-info/about.php:209
+msgid "Child Theme"
+msgstr "Chủ đề trẻ em"
+
+#: includes/theme-info/about.php:202
+msgid "We have dedicated team members for theme customization. Feel free to contact us any time if you need any customization service."
+msgstr "Chúng tôi có các thành viên nhóm chuyên dụng cho chủ đề tùy chỉnh. Hãy liên hệ với chúng tôi bất cứ lúc nào nếu bạn cần bất kỳ dịch vụ tùy biến nào."
+
+#: includes/theme-info/about.php:200 includes/theme-info/about.php:203
+msgid "Customization Request"
+msgstr "Yêu cầu tùy chỉnh"
+
+#: includes/theme-info/about.php:174
+msgid "Kindly check our theme documentation for detailed information and video instructions."
+msgstr "Vui lòng kiểm tra tài liệu chủ đề của chúng tôi để biết thông tin chi tiết và hướng dẫn bằng video."
+
+#: includes/theme-info/about.php:157
+msgid "Install %1$s plugin to import demo content. Demo data are bundled within the theme, Please make sure plugin is installed and activated. After plugin activation, go to Import Demo Data menu under Appearance and import it."
+msgstr "cài đặt d %1$s plugin to import demo content. Demo data is bundled within the theme, Hãy kiểm tra lại plugin đã được cài đặt. After plugin activation, go to Import Data Demo menu under Appearance and import it."
+
+#: includes/theme-info/about.php:152
+msgid "Useful Plugins List:"
+msgstr "Danh sách Plugins hữu ích:"
+
+#: includes/theme-info/about.php:151
+msgid "This theme supports some helpful WordPress plugins to enhance your website."
+msgstr "Chủ đề này hỗ trợ một số plugin WordPress hữu ích để nâng cao trang web của bạn."
+
+#: includes/theme-info/about.php:141
+msgid "Please install the One Click Demo Import plugin to import the demo content. After activation go to Appearance >> Import Demo Data and import it."
+msgstr "Vui lòng cài đặt plugin Nhập One Demo Demo để nhập nội dung bản trình diễn. Sau khi kích hoạt, hãy vào Giao diện >> Nhập dữ liệu trình diễn và nhập dữ liệu."
+
+#: includes/theme-info/about.php:136
+msgid "Static Front Page"
+msgstr "Trang trước tĩnh"
+
+#: includes/theme-info/about.php:133
+msgid "Create a new page to display on front page ( Ex: Home ) and assign \"Home\" template. Select A static page then Front page and Posts page to display front page specific sections. Note: Static page will be set automatically when you import demo content."
+msgstr "Tạo trang mới để hiển thị trên trang chủ (Ví dụ: Trang chủ) và gán mẫu  \"Trang chủ \". Chọn Một trang tĩnh sau đó trang Mặt trận và trang Bài đăng để hiển thị các phần cụ thể của trang trước. Lưu ý: Trang tĩnh sẽ được đặt tự động khi bạn nhập nội dung demo."
+
+#: includes/theme-info/about.php:132
+msgid "Setting Static Front Page"
+msgstr "Đặt trang trước tĩnh"
+
+#: includes/theme-info/about.php:126
+msgid "Reference"
+msgstr "Tài liệu tham khảo"
+
+#: includes/theme-info/about.php:126
+msgid "Please make sure all WooCommerce pages are set properly. %1$s"
+msgstr "Vui lòng đảm bảo tất cả các trang WooCommerce được đặt chính xác. %1$s"
+
+#: includes/theme-info/about.php:125
+msgid "WooCommerce Pages"
+msgstr "Trang WooCommerce"
+
+#: includes/theme-info/about.php:119
+msgid "Please install WooCommerce plugin."
+msgstr "Vui lòng cài đặt plugin WooCommerce."
+
+#: includes/theme-info/about.php:105 includes/theme-info/about.php:165
+msgid "If you have any problem, feel free to create ticket on our dedicated Support forum."
+msgstr "Nếu bạn có bất kỳ vấn đề gì, vui lòng tạo vé trên diễn đàn Hỗ trợ riêng của chúng tôi."
+
+#: includes/theme-info/about.php:104 includes/theme-info/about.php:106
+#: includes/theme-info/about.php:163 includes/theme-info/about.php:166
+msgid "Contact Support"
+msgstr "Liên hệ hỗ trợ"
+
+#: includes/theme-info/about.php:96 includes/theme-info/about.php:185
+msgid "View Pro Version"
+msgstr "Xem phiên bản Pro"
+
+#: includes/theme-info/about.php:95 includes/theme-info/about.php:184
+msgid "Upgrade to pro version for additional features and options."
+msgstr "Nâng cấp lên phiên bản pro cho các tính năng và tùy chọn bổ sung."
+
+#: includes/theme-info/about.php:94 includes/theme-info/about.php:181
+msgid "Pro Version"
+msgstr "Phiên bản chuyên nghiệp"
+
+#: includes/theme-info/about.php:86 includes/theme-info/about.php:194
+msgid "Video Tutorials"
+msgstr "Video hướng dẫn"
+
+#: includes/theme-info/about.php:85 includes/theme-info/about.php:193
+msgid "Please check our youtube channel for video instructions of eCommerce Gem setup and customization."
+msgstr "Vui lòng kiểm tra kênh youtube của chúng tôi để biết hướng dẫn bằng video về cách thiết lập và tùy chỉnh Đá eCommerce."
+
+#: includes/theme-info/about.php:84 includes/theme-info/about.php:191
+msgid "Youtube Video Tutorials"
+msgstr "Hướng dẫn bằng video trên Youtube"
+
+#: includes/theme-info/about.php:76
+msgid "Go to Customizer"
+msgstr "Chuyển đến Trình tùy chỉnh"
+
+#: includes/theme-info/about.php:75
+msgid "Start customizing every aspect of the website with customizer."
+msgstr "Bắt đầu tùy chỉnh mọi khía cạnh của trang web với tùy biến."
+
+#: includes/theme-info/about.php:74
+msgid "Customize Everything"
+msgstr "Tùy chỉnh mọi thứ"
+
+#: includes/theme-info/about.php:67
+msgid "Check recommended actions"
+msgstr "Kiểm tra các hành động được đề xuất"
+
+#: includes/theme-info/about.php:66
+msgid "We recommend few steps to take so that you can get complete site like shown in demo."
+msgstr "Chúng tôi khuyên bạn nên thực hiện một vài bước để bạn có thể có được trang web hoàn chỉnh như được hiển thị trong bản trình diễn."
+
+#: includes/theme-info/about.php:58
+msgid "View documentation"
+msgstr "Xem tài liệu"
+
+#: includes/theme-info/about.php:57
+msgid "Find step by step instructions with video documentation to setup theme easily."
+msgstr "Tìm hướng dẫn từng bước với tài liệu video để thiết lập chủ đề dễ dàng."
+
+#: includes/theme-info/about.php:56 includes/theme-info/about.php:172
+msgid "Theme Documentation"
+msgstr "Tài liệu chủ đề"
+
+#: includes/theme-info/about.php:50
+msgid "FREE VS. PRO"
+msgstr "MIỄN PHÍ VS. PRO"
+
+#: includes/theme-info/about.php:49
+msgid "Support"
+msgstr "Hỗ trợ"
+
+#: includes/theme-info/about.php:48
+msgid "Demo Content"
+msgstr "Nội dung trình diễn"
+
+#: includes/theme-info/about.php:47
+msgid "Useful Plugins"
+msgstr "Plugin hữu dụng"
+
+#: includes/theme-info/about.php:46 includes/theme-info/about.php:65
+msgid "Recommended Actions"
+msgstr "Hành động được đề xuất"
+
+#: includes/theme-info/about.php:45
+msgid "Getting Started"
+msgstr "Bắt đầu"
+
+#: includes/theme-info/about.php:37
+msgid "Upgrade To Pro Theme"
+msgstr "Nâng cấp lên chủ đề Pro"
+
+#: includes/theme-info/about.php:33
+msgid "Rate This Theme"
+msgstr "Xếp hạng chủ đề này"
+
+#: includes/theme-info/about.php:29 includes/theme-info/about.php:175
+msgid "View Documentation"
+msgstr "Xem tài liệu"
+
+#: includes/theme-info/about.php:25
+msgid "View Demo"
+msgstr "Xem bản trình diễn"
+
+#: includes/theme-info/about.php:21
+msgid "Theme Details"
+msgstr "Chi tiết chủ đề"
+
+#. translators: 1: theme name
+#: includes/theme-info/about.php:16
+msgid "We hope this page will help you to setup %1$s with few clicks. We believe you will find it easy to use and perfect for your website development."
+msgstr "Chúng tôi hy vọng trang này sẽ giúp bạn thiết lập %1$s với vài cú nhấp chuột. Chúng tôi tin rằng bạn sẽ thấy nó dễ sử dụng và hoàn hảo cho việc phát triển trang web của bạn."
+
+#. translators: theme version
+#: includes/theme-info/about.php:13
+msgid "Welcome to %s - "
+msgstr "Chào mừng phiên bản %s - "
+
+#: includes/theme-info/about.php:9 includes/theme-info/about.php:10
+msgid "About eCommerce Gem"
+msgstr "Trong khoảng eCommerce Gem"
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: includes/tgm/class-tgm-plugin-activation.php:3520
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Đang cài đặt Plugin %1$s (%2$d/%3$d)"
+
+#: includes/tgm/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr "Tất cả các cài đặt đã được hoàn thành."
+
+#. translators: 1: plugin name.
+#: includes/tgm/class-tgm-plugin-activation.php:3517
+msgid "%1$s installed successfully."
+msgstr "%1$s được cài đặt thành công."
+
+#: includes/tgm/class-tgm-plugin-activation.php:3515
+msgid "The installation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr "Quá trình cài đặt bắt đầu. Quá trình này có thể mất một lúc trên một số máy chủ, vì vậy hãy kiên nhẫn."
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: includes/tgm/class-tgm-plugin-activation.php:3512
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Cài đặt và kích hoạt Plugin %1$s (%2$d/%3$d)"
+
+#: includes/tgm/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr "Tất cả các cài đặt và kích hoạt đã hoàn thành."
+
+#. translators: 1: plugin name.
+#: includes/tgm/class-tgm-plugin-activation.php:3509
+#: includes/tgm/class-tgm-plugin-activation.php:3517
+msgid "Hide Details"
+msgstr "Ẩn chi tiết"
+
+#. translators: 1: plugin name.
+#: includes/tgm/class-tgm-plugin-activation.php:3509
+#: includes/tgm/class-tgm-plugin-activation.php:3517
+msgid "Show Details"
+msgstr "Hiện chi tiết"
+
+#. translators: 1: plugin name.
+#: includes/tgm/class-tgm-plugin-activation.php:3509
+msgid "%1$s installed and activated successfully."
+msgstr "Đã cài đặt và kích hoạt %1$s thành công."
+
+#: includes/tgm/class-tgm-plugin-activation.php:3507
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr "Quá trình cài đặt và kích hoạt đang bắt đầu. Quá trình này có thể mất một lúc trên một số máy chủ, vì vậy hãy kiên nhẫn."
+
+#. translators: 1: plugin name.
+#: includes/tgm/class-tgm-plugin-activation.php:3503
+msgid "The installation of %1$s failed."
+msgstr "Việc cài đặt %1$s không thành công."
+
+#. translators: 1: plugin name, 2: error message.
+#: includes/tgm/class-tgm-plugin-activation.php:3501
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "Đã xảy ra lỗi khi cài đặt %1$s: <strong>%2$s</strong>."
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: includes/tgm/class-tgm-plugin-activation.php:3498
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "Đang cập nhật gói mở rộng %1$s (%2$d/%3$d)"
+
+#: includes/tgm/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr "Kích hoạt plugin không thành công."
+
+#: includes/tgm/class-tgm-plugin-activation.php:2934
+msgid "No plugins are available to be activated at this time."
+msgstr "Không có plugin nào được kích hoạt tại thời điểm này."
+
+#: includes/tgm/class-tgm-plugin-activation.php:2908
+msgid "No plugins were selected to be activated. No action taken."
+msgstr "Không có plugin nào được chọn để kích hoạt. Không có hành động."
+
+#: includes/tgm/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr "Không có plugin nào được cập nhật tại thời điểm này."
+
+#: includes/tgm/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr "Không có plugin nào được cài đặt tại thời điểm này."
+
+#: includes/tgm/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr "Không có plugin nào được chọn để cập nhật. Không có hành động."
+
+#: includes/tgm/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr "Không có plugin nào được chọn để cài đặt. Không có hành động."
+
+#: includes/tgm/class-tgm-plugin-activation.php:2726
+#: includes/theme-info/class-about.php:565
+msgid "Activate"
+msgstr "Kích hoạt"
+
+#: includes/tgm/class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr "Cập nhật"
+
+#: includes/tgm/class-tgm-plugin-activation.php:2717
+#: includes/theme-info/class-about.php:561
+msgid "Install"
+msgstr "Cài đặt"
+
+#: includes/tgm/class-tgm-plugin-activation.php:2684
+msgid "Upgrade message from the plugin author:"
+msgstr "Nâng cấp tin nhắn từ tác giả plugin:"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: includes/tgm/class-tgm-plugin-activation.php:2614
+msgid "Activate %2$s"
+msgstr "Kích hoạt %2$s"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: includes/tgm/class-tgm-plugin-activation.php:2608
+msgid "Update %2$s"
+msgstr "Cập nhật %2$s"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: includes/tgm/class-tgm-plugin-activation.php:2603
+msgid "Install %2$s"
+msgstr "Cài đặt %2$s"
+
+#: includes/tgm/class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr "Trạng thái"
+
+#: includes/tgm/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr "Phiên bản"
+
+#: includes/tgm/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr "Định dạng"
+
+#: includes/tgm/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr "Nguồn"
+
+#: includes/tgm/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr "Plugin"
+
+#: includes/tgm/class-tgm-plugin-activation.php:2533
+msgid "No plugins to install, update or activate."
+msgstr "Không có plugin để cài đặt, cập nhật hoặc kích hoạt."
+
+#: includes/tgm/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr "Phiên bản có sẵn:"
+
+#: includes/tgm/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr "Phiên bản yêu cầu tối thiểu:"
+
+#: includes/tgm/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr "Phiên bản đã cài đặt:"
+
+#: includes/tgm/class-tgm-plugin-activation.php:2482
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr "không xác định"
+
+#. translators: 1: number of plugins.
+#: includes/tgm/class-tgm-plugin-activation.php:2400
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] "Cần kích hoạt <span class=\"count\">(%s)</span>"
+
+#. translators: 1: number of plugins.
+#: includes/tgm/class-tgm-plugin-activation.php:2396
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] "Cần nâng cấp <span class=\"count\">(%s)</span>"
+
+#. translators: 1: number of plugins.
+#: includes/tgm/class-tgm-plugin-activation.php:2392
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] "Cần cài đặt <span class=\"count\">(%s)</span>"
+
+#. translators: 1: number of plugins.
+#: includes/tgm/class-tgm-plugin-activation.php:2388
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "Tất cả <span class=\"count\">(%s)</span>"
+
+#. translators: 1: install status, 2: update status
+#: includes/tgm/class-tgm-plugin-activation.php:2342
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr "%1$s, %2$s"
+
+#: includes/tgm/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr "Cập nhật khuyến cáo"
+
+#: includes/tgm/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr "Yêu cầu cập nhật"
+
+#: includes/tgm/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr "Cập nhật bắt buộc không khả dụng"
+
+#: includes/tgm/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr "Hoạt động"
+
+#: includes/tgm/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr "Đã cài đặt nhưng chưa kích hoạt"
+
+#: includes/tgm/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr "Chưa cài đặt"
+
+#: includes/tgm/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr "Đã đóng gói trước"
+
+#: includes/tgm/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr "Nguồn bên ngoài"
+
+#: includes/tgm/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr "Kho lưu trữ WordPress"
+
+#: includes/tgm/class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr "Được đề xuất"
+
+#: includes/tgm/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr "Bắt buộc"
+
+#. translators: %s: version number
+#: includes/tgm/class-tgm-plugin-activation.php:1982
+msgid "TGMPA v%s"
+msgstr "TGMPA v%s"
+
+#: includes/tgm/class-tgm-plugin-activation.php:1121
+#: includes/tgm/class-tgm-plugin-activation.php:2948
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr "và"
+
+#: includes/tgm/class-tgm-plugin-activation.php:937
+msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
+msgstr "Gói plugin từ xa bao gồm nhiều tệp nhưng các tệp không được đóng gói trong một thư mục."
+
+#: includes/tgm/class-tgm-plugin-activation.php:934
+#: includes/tgm/class-tgm-plugin-activation.php:937
+msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgstr "Vui lòng liên hệ với nhà cung cấp plugin và yêu cầu họ đóng gói plugin theo hướng dẫn của WordPress."
+
+#: includes/tgm/class-tgm-plugin-activation.php:934
+msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
+msgstr "Gói plugin từ xa không chứa một thư mục có slug và đổi tên mong muốn không hoạt động."
+
+#: includes/tgm/class-tgm-plugin-activation.php:523
+msgid "Update Required"
+msgstr "Cần cập nhật"
+
+#: includes/tgm/class-tgm-plugin-activation.php:522
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr "Plugin này cần được cập nhật để tương thích với chủ đề của bạn."
+
+#: includes/tgm/class-tgm-plugin-activation.php:397
+msgid "Please contact the administrator of this site for help."
+msgstr "Vui lòng liên hệ với quản trị viên của trang web này để được trợ giúp."
+
+#: includes/tgm/class-tgm-plugin-activation.php:396
+msgid "There are one or more required or recommended plugins to install, update or activate."
+msgstr "Có một hoặc nhiều plugin được yêu cầu hoặc được đề xuất để cài đặt, cập nhật hoặc kích hoạt."
+
+#: includes/tgm/class-tgm-plugin-activation.php:395
+msgid "Dismiss this notice"
+msgstr "Loại bỏ thông báo này"
+
+#. translators: 1: dashboard link.
+#: includes/tgm/class-tgm-plugin-activation.php:394
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Tất cả các plugin được cài đặt và kích hoạt thành công. %1$s"
+
+#. translators: 1: plugin name.
+#: includes/tgm/class-tgm-plugin-activation.php:392
+msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
+msgstr "Plugin chưa được kích hoạt. Cần có phiên bản %s cao hơn cho chủ đề này. Vui lòng cập nhật plugin."
+
+#. translators: 1: plugin name.
+#: includes/tgm/class-tgm-plugin-activation.php:390
+msgid "No action taken. Plugin %1$s was already active."
+msgstr "Không có hành động. Plugin %1$s đã hoạt động."
+
+#: includes/tgm/class-tgm-plugin-activation.php:388
+#: includes/tgm/class-tgm-plugin-activation.php:2952
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] "Plugin sau đã được kích hoạt thành công:"
+
+#: includes/tgm/class-tgm-plugin-activation.php:387
+#: includes/tgm/class-tgm-plugin-activation.php:3159
+msgid "Plugin activated successfully."
+msgstr "Phần hỗ trợ thêm đã được kích hoạt thành công."
+
+#: includes/tgm/class-tgm-plugin-activation.php:386
+#: includes/tgm/class-tgm-plugin-activation.php:827
+#: includes/tgm/class-tgm-plugin-activation.php:2533
+#: includes/tgm/class-tgm-plugin-activation.php:3580
+msgid "Return to the Dashboard"
+msgstr "Quay lại Dashboard"
+
+#: includes/tgm/class-tgm-plugin-activation.php:385
+msgid "Return to Required Plugins Installer"
+msgstr "Quay lại Trình cài đặt plugin bắt buộc"
+
+#: includes/tgm/class-tgm-plugin-activation.php:380
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] "Bắt đầu kích hoạt các plugin"
+
+#: includes/tgm/class-tgm-plugin-activation.php:375
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] "Bắt đầu nâng cấp các plugin"
+
+#: includes/tgm/class-tgm-plugin-activation.php:370
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] "Bắt đầu cài đặt các plugin"
+
+#: includes/tgm/class-tgm-plugin-activation.php:333
+msgid "Something went wrong with the plugin API."
+msgstr "Có gì đó không đúng với API mở rộng."
+
+#. translators: %s: plugin name.
+#: includes/tgm/class-tgm-plugin-activation.php:332
+msgid "Updating Plugin: %s"
+msgstr "Đang cập nhật plugin:%s"
+
+#. translators: %s: plugin name.
+#: includes/tgm/class-tgm-plugin-activation.php:330
+msgid "Installing Plugin: %s"
+msgstr "Đang cài đặt gói mở rộng: %s"
+
+#: includes/tgm/class-tgm-plugin-activation.php:328
+msgid "Install Plugins"
+msgstr "Cài đặt plugin"
+
+#: includes/tgm/class-tgm-plugin-activation.php:327
+msgid "Install Required Plugins"
+msgstr "Bắt buộc cài đặt Plugins"
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: includes/template-tags.php:92
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "Chỉnh sửa <span class=\"screen-reader-text\">%s</span>"
+
+#. translators: used between list items, there is a space after the comma
+#: includes/template-tags.php:42 includes/template-tags.php:82
+msgctxt "list item separator"
+msgid ", "
+msgstr ", "
+
+#. translators: %s: post title
+#: includes/template-tags.php:57
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "Để lại một Thảo luận <span class=\"screen-reader-text\"> trên %s</span>"
+
+#: includes/template-functions.php:264
+msgid "Contact Form 7"
+msgstr "Contact Form 7"
+
+#: includes/template-functions.php:259
+msgid "MailChimp for WordPress"
+msgstr "MailChimp for WordPress"
+
+#: includes/theme-info/about.php:140 includes/theme-info/about.php:157
+#: includes/template-functions.php:254
+msgid "One Click Demo Import"
+msgstr "One Click Demo Import"
+
+#: includes/theme-info/about.php:118 includes/template-functions.php:249
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: includes/hooks.php:586
+msgid "%1$s by %2$s"
+msgstr "%1$s bởi %2$s"
+
+#: includes/hooks.php:257
+msgctxt "submit button"
+msgid "Search"
+msgstr "Tìm kiếm"
+
+#: includes/hooks.php:221 includes/customizer/core.php:73
+msgid "Select Category"
+msgstr "Chọn danh mục"
+
+#: includes/hooks.php:209
+msgctxt "placeholder"
+msgid "Search Products &hellip;"
+msgstr "Tìm kiếm Sản phẩm &hellip;"
+
+#: includes/hooks.php:123
+msgid "Log Out"
+msgstr "Đăng xuất"
+
+#: includes/helpers.php:201
+msgid "%s page is not set."
+msgstr "%s trang chưa được đặt."
+
+#: includes/helpers.php:198
+msgid "%1$s page does not contain %2$s shortcode."
+msgstr "%1$s trang không chứa %2$s mã ngắn."
+
+#: includes/helpers.php:102
+msgctxt "page setting"
+msgid "My account"
+msgstr "Tài khoản của tôi"
+
+#: includes/helpers.php:98
+msgctxt "page setting"
+msgid "Checkout"
+msgstr "Kiểm tra"
+
+#: includes/helpers.php:94
+msgctxt "page setting"
+msgid "Cart"
+msgstr "xe đẩy"
+
+#: includes/helpers.php:90
+msgctxt "page setting"
+msgid "Shop base"
+msgstr "Cửa hàng cơ sở"
+
+#. translators: If there are characters in your language that are not supported
+#. by Playfair Display, translate this to 'off'. Do not translate into your own
+#. language.
+#: includes/helpers.php:63
+msgctxt "Playfair Display font: on or off"
+msgid "on"
+msgstr "trên"
+
+#. translators: If there are characters in your language that are not supported
+#. by Barlow, translate this to 'off'. Do not translate into your own language.
+#: includes/helpers.php:58
+msgctxt "Barlow font: on or off"
+msgid "on"
+msgstr "trên"
+
+#: includes/demo/demo.php:18
+msgid "Theme Demo Content"
+msgstr "Nội dung trình diễn chủ đề"
+
+#: includes/customizer/options/slider.php:206
+msgid "Enable Autoplay"
+msgstr "Bật Tự động phát"
+
+#: includes/customizer/options/slider.php:191
+msgid "Show Pager"
+msgstr "Hiển thị Máy nhắn tin"
+
+#: includes/customizer/options/slider.php:174
+msgid "in seconds"
+msgstr "trong vài giây"
+
+#: includes/customizer/options/slider.php:173
+msgid "Transition Delay"
+msgstr "Chậm trễ chuyển tiếp"
+
+#: includes/customizer/options/slider.php:159
+msgid "Scroll"
+msgstr "Cuộn theo"
+
+#: includes/customizer/options/slider.php:158
+msgid "Fade"
+msgstr "Phai màu"
+
+#: includes/customizer/options/slider.php:154
+msgid "Transition Effect"
+msgstr "Hiệu quả chuyển giao"
+
+#: includes/customizer/options/slider.php:140
+msgid "Slider Setting"
+msgstr "Cài đặt thanh trượt"
+
+#: includes/customizer/options/slider.php:127
+msgid "Button Link"
+msgstr "Liên kết nút"
+
+#: includes/customizer/options/slider.php:110
+msgid "Button Text"
+msgstr "Chữ button"
+
+#: includes/customizer/options/slider.php:94
+msgid "Center"
+msgstr "Chính giữa"
+
+#: includes/widgets/advertisement.php:340
+#: includes/customizer/options/slider.php:93
+msgid "Right"
+msgstr "Phải"
+
+#: includes/widgets/advertisement.php:339
+#: includes/customizer/options/slider.php:92
+msgid "Left"
+msgstr "Trái"
+
+#: includes/customizer/options/slider.php:88
+msgid "Caption Position"
+msgstr "Vị trí phụ đề"
+
+#: includes/customizer/options/slider.php:71
+msgid "Select Page"
+msgstr "Chọn trang"
+
+#: includes/customizer/options/slider.php:56
+msgid "Slide "
+msgstr "Slide "
+
+#: includes/customizer/options/slider.php:33
+msgid "Enable Slider"
+msgstr "Bật thanh trượt"
+
+#: includes/customizer/options/slider.php:19
+msgid "Slider On/Off"
+msgstr "Trượt On / Off"
+
+#: includes/customizer/options/slider.php:11
+msgid "Featured Slider Options"
+msgstr "Tùy chọn thanh trượt nổi bật"
+
+#: includes/customizer/options/shop.php:87
+msgid "Disable Product Sorting Option"
+msgstr "Tắt tùy chọn sắp xếp sản phẩm"
+
+#: includes/customizer/options/shop.php:73
+msgid "4"
+msgstr "4"
+
+#: includes/customizer/options/shop.php:72
+msgid "3"
+msgstr "3"
+
+#: includes/customizer/options/shop.php:71
+msgid "2"
+msgstr "2"
+
+#: includes/customizer/options/shop.php:66
+msgid "Number of products shown per row"
+msgstr "Số lượng sản phẩm được hiển thị trên mỗi hàng"
+
+#: includes/customizer/options/shop.php:65
+msgid "Products Per Row"
+msgstr "Sản phẩm mỗi hàng"
+
+#: includes/customizer/options/shop.php:48
+msgid "Total number of products shown per page"
+msgstr "Tổng số sản phẩm được hiển thị trên mỗi trang"
+
+#: includes/customizer/options/shop.php:47
+msgid "Products Per Page"
+msgstr "Sản phẩm trên mỗi trang"
+
+#: includes/customizer/options/shop.php:11
+msgid "Shop Page Options"
+msgstr "Tùy chọn trang cửa hàng"
+
+#: includes/customizer/options/options.php:36
+msgid "Theme Options"
+msgstr "Tuỳ chọn giao diện"
+
+#: includes/customizer/options/options.php:27
+msgid "Applied to main color of site."
+msgstr "Áp dụng cho màu chính của trang web."
+
+#: includes/customizer/options/options.php:26
+msgid "Primary Color"
+msgstr "Màu chính"
+
+#: includes/customizer/options/header.php:263
+msgid "Cart Icon"
+msgstr "Biểu tượng giỏ hàng"
+
+#: includes/customizer/options/header.php:246
+msgid "Show Cart Icon"
+msgstr "Biểu tượng giỏ hàng"
+
+#: includes/customizer/options/header.php:227
+msgid "Login/Register Text"
+msgstr "Đăng nhập / Đăng ký"
+
+#: includes/customizer/options/header.php:210
+#: includes/customizer/options/header.php:264
+#: includes/customizer/options/header.php:299
+msgid "Fontawesome icons are only supported."
+msgstr "Biểu tượng Fontawesome chỉ được hỗ trợ."
+
+#: includes/customizer/options/header.php:209
+msgid "Login/Register Icon"
+msgstr "Biểu tượng Đăng nhập / Đăng ký"
+
+#: includes/customizer/options/header.php:192
+msgid "Show Login/Register"
+msgstr "Hiển thị Đăng nhập / Đăng ký"
+
+#: includes/customizer/options/header.php:175
+msgid "(Go to Appearance >> Menus, create menu and assign it to Social Links)"
+msgstr "(Chuyển đến Giao diện >> Menu, tạo menu và gán nó cho Liên kết xã hội)"
+
+#: includes/customizer/options/header.php:174
+msgid "Show Social Icons"
+msgstr "Hiển thị biểu tượng xã hội"
+
+#: includes/customizer/options/header.php:157
+msgid "Right Section"
+msgstr "Phần bên phải"
+
+#: includes/customizer/options/header.php:137
+msgid "Email"
+msgstr "Email"
+
+#: includes/customizer/options/header.php:121
+msgid "Phone Number"
+msgstr "Số điện thoại"
+
+#: includes/customizer/options/header.php:105
+msgid "Address/Location"
+msgstr "Địa chỉ / Vị trí"
+
+#: includes/customizer/options/header.php:91
+msgid "Social Icons"
+msgstr "Biểu tượng mạng xã hội"
+
+#: includes/customizer/options/header.php:90
+msgid "Menu"
+msgstr "Trình đơn"
+
+#: includes/customizer/options/header.php:89
+msgid "Current Date"
+msgstr "Ngay hiện tại"
+
+#: includes/customizer/options/header.php:88
+msgid "Store Information"
+msgstr "Lưu trữ thông tin"
+
+#: includes/customizer/options/header.php:83
+msgid "Left Section Options"
+msgstr "Tùy chọn phần bên trái"
+
+#: includes/customizer/options/header.php:66
+msgid "Left Section"
+msgstr "Phần bên trái"
+
+#: includes/customizer/options/header.php:47
+msgid "Show Top Header"
+msgstr "Hiển thị tiêu đề hàng đầu"
+
+#: includes/customizer/options/header.php:32
+msgid "Top Header Options"
+msgstr "Tùy chọn tiêu đề hàng đầu"
+
+#: includes/customizer/options/header.php:24
+msgid "Logo + Tagline"
+msgstr "Logo + Dòng giới thiệu"
+
+#: includes/customizer/options/header.php:23
+msgid "Title + Tagline"
+msgstr "Tiêu đề + Dòng giới thiệu"
+
+#: includes/customizer/options/header.php:22
+msgid "Logo Only"
+msgstr "Chỉ Logo"
+
+#: includes/customizer/options/header.php:19
+msgid "Logo Options"
+msgstr "Tùy chọn Logo"
+
+#: includes/customizer/options/footer.php:26
+msgid "Copyright Text"
+msgstr "Văn bản Bản quyền"
+
+#: includes/customizer/options/footer.php:11
+msgid "Footer Options"
+msgstr "Tùy chọn chân trang"
+
+#: includes/customizer/options/breadcrumb.php:46
+msgid "Breadcrumb Home Text"
+msgstr "Breadcrumb Trang chủ"
+
+#: includes/customizer/options/breadcrumb.php:32
+msgid "Simple"
+msgstr "Đơn giản"
+
+#: includes/customizer/options/breadcrumb.php:31
+msgid "Disable"
+msgstr "Tắt"
+
+#: includes/customizer/options/breadcrumb.php:26
+msgid "Breadcrumb Type"
+msgstr "Loại Breadcrumb"
+
+#: includes/customizer/options/breadcrumb.php:11
+msgid "Breadcrumb Options"
+msgstr "Tùy chọn Breadcrumb"
+
+#: includes/customizer/options/blog.php:81
+msgid "Read More Text"
+msgstr "Read More Text"
+
+#: includes/customizer/options/blog.php:64
+msgid "in words"
+msgstr "bằng lời"
+
+#: includes/customizer/options/blog.php:63
+msgid "Excerpt Length"
+msgstr "Độ dài mô tả"
+
+#: includes/customizer/options/blog.php:49
+#: includes/customizer/options/shop.php:33
+msgid "No Sidebar"
+msgstr "Không có thanh bên"
+
+#: includes/customizer/options/blog.php:48
+#: includes/customizer/options/shop.php:32
+msgid "Right Sidebar"
+msgstr "Cột phải"
+
+#: includes/customizer/options/blog.php:47
+#: includes/customizer/options/shop.php:31
+msgid "Left Sidebar"
+msgstr "Cột trái"
+
+#: includes/customizer/options/blog.php:42
+msgid "Global Layout"
+msgstr "Bố cục chung"
+
+#: includes/customizer/options/blog.php:26
+msgid "Enable Sticky Sidebar"
+msgstr "Bật Thanh bên Chú ý"
+
+#: includes/customizer/options/blog.php:11
+msgid "Layout Options"
+msgstr "Tuỳ chọn Giao diện"
+
+#: includes/customizer/customizer.php:53
+msgid "Buy PRO"
+msgstr "Mua PRO"
+
+#: includes/theme-info/class-about.php:762
+#: includes/customizer/customizer.php:52
+msgid "eCommerce Gem Plus"
+msgstr "eCommerce Gem Thêm"
+
+#: includes/customizer/options/slider.php:104 includes/customizer/core.php:99
+#: includes/customizer/core.php:100 includes/customizer/core.php:101
+#: includes/customizer/core.php:102 includes/customizer/core.php:103
+msgid "Shop Now"
+msgstr "Mua ngay"
+
+#: includes/customizer/core.php:91
+msgid "Copyright &copy; All rights reserved."
+msgstr "Bản quyền &copy; Đã đăng ký Bản quyền."
+
+#: includes/customizer/core.php:79
+msgid "Read More"
+msgstr "Đọc tiếp"
+
+#: includes/customizer/core.php:65
+msgid "Login / Register"
+msgstr "Đăng nhập / Đăng ký"
+
+#: functions.php:152 functions.php:160 functions.php:168 functions.php:176
+msgid "Footer %d"
+msgstr "Chân trang %d"
+
+#: functions.php:145
+msgid "Add widgets here to appear in Home Page Widget Area."
+msgstr "Thêm tiện ích ở đây để xuất hiện trong Khu vực tiện ích trang chủ."
+
+#: functions.php:143
+msgid "Home Page Widget Area"
+msgstr "Khu vực tiện ích trang chủ"
+
+#: functions.php:136
+msgid "Add widgets here to appear in advertisement area below main slider of home page"
+msgstr "Thêm tiện ích ở đây để xuất hiện trong khu vực quảng cáo bên dưới thanh trượt chính của trang chủ"
+
+#: functions.php:134
+msgid "Advertisements Below Slider"
+msgstr "Quảng cáo bên dưới thanh trượt"
+
+#: functions.php:124
+msgid "Widgets added here will appear in sidebar of shop pages only."
+msgstr "Các tiện ích bổ sung ở đây sẽ chỉ xuất hiện trong thanh bên của các trang cửa hàng."
+
+#: functions.php:122 includes/customizer/options/shop.php:26
+msgid "Shop Sidebar"
+msgstr "Mua thanh bên"
+
+#: functions.php:112
+msgid "Add widgets here to appear in Sidebar."
+msgstr "Thêm tiện ích ở đây để xuất hiện trong Thanh bên."
+
+#: functions.php:110
+msgid "Blog Sidebar"
+msgstr "Blog Sidebar"
+
+#: functions.php:55
+msgid "Social Links"
+msgstr "đường liên kết mạng xã hội"
+
+#: functions.php:54
+msgid "Primary Header"
+msgstr "Tiêu đề chính"
+
+#: functions.php:53
+msgid "Top Header"
+msgstr "Tiêu đề hàng đầu"
+
+#: comments.php:79
+msgid "Comments are closed."
+msgstr "Đã đóng bình luận."
+
+#: comments.php:45 comments.php:66
+msgid "Newer Comments"
+msgstr "Các bình luận mới hơn"
+
+#: comments.php:44 comments.php:65
+msgid "Older Comments"
+msgstr "Các bình luận trước"
+
+#: comments.php:41 comments.php:62
+msgid "Comment navigation"
+msgstr "Điều hướng bình luận"
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:32
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s đã nghĩ đến &ldquo;%2$s&rdquo;"
+
+#. Template Name of the theme
+#: includes/customizer/core.php:95
+msgid "Home"
+msgstr "Nhà"
+
+#: 404.php:21
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "Có vẻ như không tìm thấy gì ở vị trí này. Có thể thử một trong các liên kết dưới đây hoặc tìm kiếm khác?"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oops! Không tìm thấy trang này."
+
+#. Author URI of the theme
+msgid "https://www.prodesigns.com/"
+msgstr "https://www.prodesigns.com/"
+
+#. Author of the theme
+msgid "ProDesigns"
+msgstr "ProDesigns"
+
+#. Theme URI of the theme
+msgid "https://www.prodesigns.com/wordpress-themes/downloads/ecommerce-gem/"
+msgstr "https://www.prodesigns.com/wordpress-themes/downloads/ecommerce-gem/"

@@ -1,0 +1,589 @@
+# Translation of Themes - Halcyon in Vietnamese
+# This file is distributed under the same license as the Themes - Halcyon package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-11-29 11:07:38+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: vi_VN\n"
+"Project-Id-Version: Themes - Halcyon\n"
+
+#. Theme Name of the plugin/theme
+msgid "Halcyon"
+msgstr "Halcyon"
+
+#. Description of the plugin/theme
+msgid "Halcyon is a modern and clean WordPress theme designed for a blog or a website. The large featured slider with advance slider options makes this theme a great choice for photographers, or any users who want to share their visuals in a bold way. The three footer widget areas offer plenty of space for any secondary information, and striking typography makes the content look stunning. The Theme has a built-in Recent Posts widget, Popular Posts widget, Social Link Widget and Author widget. It features full width page option, SEO friendly structure, custom logo support and social media links. The theme is responsive and scales beautifully with various screen sizes while maintaining the text readability and image quality. The theme is also translation ready."
+msgstr "Halcyon là một giao diện WordPress hiện đại và sạch sẽ được thiết kế cho blog hoặc trang web. Thanh trượt nổi bật với các tùy chọn thanh trượt trước làm chủ đề này trở thành lựa chọn tuyệt vời cho các nhiếp ảnh gia hoặc bất kỳ người dùng nào muốn chia sẻ hình ảnh của họ một cách táo bạo. Ba khu vực footer widget cung cấp nhiều không gian cho bất kỳ thông tin thiết yếu nào và cách đánh máy nổi bật làm cho nội dung trông thật tuyệt. Giao diện được tích hợp sẵn Widget bài viết, các widget phổ biến về bài viết, tiện ích liên kết xã hội và tiện ích Tác giả. Nó có tính năng tuỳ chọn trang khổ rộng, cấu trúc SEO thân thiện, hỗ trợ biểu tượng tùy chỉnh và liên kết truyền thông xã hội. Giao diện phù hợp với nhiều loại màn hình kích thước khác nhau khi duy trì khả năng đọc văn bản và chất lượng hình ảnh. Các chủ đề cũng là bản dịch sẵn sàng."
+
+#: inc/info.php:42
+msgid "Pro Version"
+msgstr "Phiên bản chuyên nghiệp"
+
+#: inc/info.php:29
+msgid "About Halcyon"
+msgstr "Về Halcyon"
+
+#: inc/info.php:25
+msgid "More Details"
+msgstr "Chi tiết hơn"
+
+#: inc/info.php:23
+msgid "View documentation"
+msgstr "Xem tài liệu"
+
+#: inc/info.php:21
+msgid "Need help?"
+msgstr "Cần giúp đỡ?"
+
+#: inc/info.php:11
+msgid "Information Links"
+msgstr "Liên kết thông tin"
+
+#: inc/info.php:22
+msgid "View demo"
+msgstr "Xem demo"
+
+#: inc/info.php:22 inc/info.php:23 inc/info.php:24 inc/info.php:25
+msgid "here"
+msgstr "đây"
+
+#: inc/info.php:24
+msgid "Support ticket"
+msgstr "Nhận Hỗ trợ"
+
+#. translators: %s: Name of current post.
+#: template-parts/content.php:37
+msgctxt "Name of current post"
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Tiếp tục đọc %s <span class=\"meta-nav\">& rarr;</span>"
+
+#: template-parts/content-none.php:31
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Có vẻ như chúng tôi không thể tìm thấy những gì bạn đang tìm kiếm. Có lẽ tìm kiếm có thể giúp đỡ."
+
+#: template-parts/content-none.php:21
+msgctxt "add new post link"
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Sẵn sàng để xuất bản  bài đăng đầu tiên của bạn ?<a href=\"%1$s\">hãy bắt đầu từ đây</a>."
+
+#: searchform.php:12
+msgctxt "placeholder"
+msgid "Search"
+msgstr "Tìm kiếm"
+
+#: searchform.php:11 searchform.php:12
+msgctxt "label"
+msgid "Search for:"
+msgstr "Tìm kiếm:"
+
+#: search.php:19
+msgctxt "search query"
+msgid "Search Results for: %s"
+msgstr "Tìm kiếm kết quả cho: %s"
+
+#: inc/widget-social-links.php:108 inc/widget-social-links.php:114
+#: inc/widget-social-links.php:120 inc/widget-social-links.php:126
+#: inc/widget-social-links.php:132 inc/widget-social-links.php:138
+#: inc/widget-social-links.php:144 inc/widget-social-links.php:150
+msgid "Leave blank if you do not want to show."
+msgstr "Để trống nếu bạn không muốn hiển thị."
+
+#: inc/widget-social-links.php:69
+msgid "Linkedin"
+msgstr "Linkedin"
+
+#: inc/widget-social-links.php:40 inc/widget-social-links.php:88
+#: inc/widget-social-links.php:168
+msgid "Social"
+msgstr "Xã hội"
+
+#: inc/widget-recent-post.php:40 inc/widget-recent-post.php:104
+#: inc/widget-recent-post.php:153
+msgid "Recent Posts"
+msgstr "Bài gần đây"
+
+#: inc/widget-popular-post.php:124 inc/widget-recent-post.php:123
+msgid "Number of Posts"
+msgstr "Số bài viết"
+
+#: inc/widget-popular-post.php:119 inc/widget-recent-post.php:118
+msgid "Short Description"
+msgstr "Mô tả ngắn"
+
+#: inc/widget-popular-post.php:75 inc/widget-recent-post.php:74
+msgctxt "post date"
+msgid "%1$s"
+msgstr "%1$s"
+
+#: inc/widget-popular-post.php:40 inc/widget-popular-post.php:105
+#: inc/widget-popular-post.php:154
+msgid "Popular Posts"
+msgstr "Bài viết phổ biến"
+
+#: inc/widget-featured-post.php:115
+msgid "Profession"
+msgstr "Chuyên nghiệp"
+
+#: inc/widget-featured-post.php:110 inc/widget-popular-post.php:114
+#: inc/widget-recent-post.php:113 inc/widget-social-links.php:101
+msgid "Title"
+msgstr "Tiêu đề"
+
+#: inc/widget-featured-post.php:100
+msgid "Posts"
+msgstr "Bài viết"
+
+#: inc/widget-featured-post.php:80
+msgid "--choose--"
+msgstr "--chọn--"
+
+#. translators: %s: Name of current post
+#: inc/template-tags.php:86 template-parts/content-page.php:35
+msgctxt "Name of current post"
+msgid "Edit %s"
+msgstr "Chỉnh sửa %s"
+
+#: inc/template-tags.php:71
+msgctxt "no of comments"
+msgid "% Comments"
+msgstr "% Bình luận"
+
+#: inc/template-tags.php:65
+msgctxt "post author"
+msgid "By "
+msgstr "Bởi "
+
+#: inc/template-tags.php:57
+msgctxt "tag list"
+msgid "Tags: %1$s"
+msgstr "Tags: %1$s"
+
+#: inc/template-tags.php:44
+msgid " ]"
+msgstr " ]"
+
+#: inc/template-tags.php:44
+msgid "[ "
+msgstr "[ "
+
+#: inc/template-tags.php:24 inc/template-tags.php:27
+msgctxt "post date"
+msgid "%s"
+msgstr "%s"
+
+#: inc/metabox.php:28
+msgid "No sidebar"
+msgstr "Không có thanh bên"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/extras.php:203 inc/extras.php:313 inc/template-tags.php:55
+msgid ", "
+msgstr ", "
+
+#. translators: 1: date, 2: time
+#: inc/extras.php:156
+msgctxt "comment date"
+msgid "%1$s"
+msgstr "%1$s"
+
+#: inc/extras.php:144
+msgctxt "comment author link"
+msgid "<b class=\"fn\">%s</b>"
+msgstr "<b class=\"fn\">%s</b>"
+
+#: inc/customizer.php:543
+msgid "Put your custom CSS"
+msgstr "Đặt CSS tuỳ chỉnh của bạn"
+
+#: inc/customizer.php:541
+msgid "Custom Css"
+msgstr "Css Tuỳ chỉnh"
+
+#: inc/customizer.php:523
+msgid "Custom CSS Settings"
+msgstr "Cài đặt CSS Tuỳ chỉnh"
+
+#: inc/customizer.php:494 inc/extras.php:96 inc/widget-social-links.php:142
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: inc/customizer.php:476 inc/extras.php:94 inc/widget-social-links.php:67
+#: inc/widget-social-links.php:136
+msgid "Dribble"
+msgstr "Dribble"
+
+#: inc/customizer.php:458 inc/extras.php:92 inc/widget-social-links.php:65
+#: inc/widget-social-links.php:130
+msgid "RSS"
+msgstr "RSS"
+
+#: inc/customizer.php:440 inc/extras.php:90 inc/widget-social-links.php:63
+#: inc/widget-social-links.php:124
+msgid "Instagram"
+msgstr "Instagram"
+
+#: inc/customizer.php:422 inc/extras.php:88 inc/widget-social-links.php:61
+#: inc/widget-social-links.php:118
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: inc/customizer.php:404 inc/extras.php:86 inc/widget-social-links.php:59
+#: inc/widget-social-links.php:112
+msgid "Twitter"
+msgstr "Twitter"
+
+#: inc/customizer.php:386 inc/extras.php:84 inc/widget-social-links.php:57
+#: inc/widget-social-links.php:106
+msgid "Facebook"
+msgstr "Facebook"
+
+#: inc/customizer.php:281
+msgid "Featured Section Title"
+msgstr "Tiêu đề mục nổi bật"
+
+#: inc/customizer.php:245
+msgid "Featured Posts Settings"
+msgstr "Cài đặt bài đăng nổi bật"
+
+#: inc/customizer.php:234
+msgid "Slider Read More"
+msgstr "Slider Đọc thêm"
+
+#: inc/customizer.php:226 inc/extras.php:177
+msgid "Read Post"
+msgstr "Đọc Bài đăng"
+
+#: inc/customizer.php:216
+msgid "Slider Pause"
+msgstr "Ngừng tạm dừng"
+
+#: inc/customizer.php:180
+msgid "Fade"
+msgstr "Phai màu"
+
+#: inc/customizer.php:140
+msgid "Enable Slider Pager"
+msgstr "Kích hoạt tính năng trượt trang"
+
+#: inc/customizer.php:122
+msgid "Enable Slider Control"
+msgstr "Bật điều khiển trượt"
+
+#: inc/customizer.php:68
+msgid "Enable Banner Slider"
+msgstr "Bật Thanh trượt Biểu ngữ"
+
+#: inc/customizer.php:50
+msgid "Slider Settings"
+msgstr "Cài đặt thanh trượt"
+
+#: inc/customizer.php:31
+msgid "Default section provided by wordpress customizer."
+msgstr "Phần mặc định được cung cấp bởi wordpress customizer."
+
+#: inc/customizer.php:30
+msgid "Default Settings"
+msgstr "Thiết lập mặc định"
+
+#: header.php:34
+msgid "Find Me On"
+msgstr "Tìm tôi trên"
+
+#: header.php:34
+msgctxt "Social link label"
+msgid "<span>%s</span>"
+msgstr "<span>%s</span>"
+
+#: functions.php:55
+msgid "Primary"
+msgstr "Sơ cấp"
+
+#: footer.php:52
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+#: footer.php:52
+msgctxt "WordPress link"
+msgid "Powered by: %s"
+msgstr "Powered by: %s"
+
+#: footer.php:51
+msgid "https://raratheme.com/wordpress-themes/halcyon/"
+msgstr "https://raratheme.com/wordpress-themes/halcyon/"
+
+#: footer.php:51
+msgctxt "author link"
+msgid "%s"
+msgstr "%s"
+
+#: footer.php:50
+msgctxt "home link"
+msgid "%s"
+msgstr "%s"
+
+#: footer.php:49
+msgid "Copyright &copy; "
+msgstr "Bản quyền & bản sao; "
+
+#: comments.php:136
+msgid "<p class=\"comment-notes\"><span>Your email address will not be published.</span></p>"
+msgstr "<p class=\"comment-notes\"><span> Địa chỉ email của bạn sẽ không được xuất bản.</span></p>"
+
+#: comments.php:130
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out?</a>"
+msgstr "Đăng nhập như <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Đăng xuất khỏi tài khoản này\">Đăng xuất?</a>"
+
+#: comments.php:124
+msgctxt "login url"
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "bạn phải <a href=\"%s\">đăng nhập</a>để đăng nhận xét ."
+
+#: comments.php:119
+msgid "Comment"
+msgstr "Bình luận"
+
+#: comments.php:116
+msgid "Post Comment"
+msgstr "đăng bình luận"
+
+#: comments.php:115
+msgid "Cancel Reply"
+msgstr "Hủy trả lời"
+
+#: comments.php:114
+msgctxt "reply"
+msgid "Send a Comment to %s"
+msgstr "Gửi nhận xét tới %s"
+
+#: comments.php:113
+msgid "Send a Comment"
+msgstr "Gửi nhận xét"
+
+#: comments.php:98
+msgid "Name*"
+msgstr "Tên*"
+
+#: comments.php:41
+msgctxt "comments title"
+msgid "1 Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] "%1$s Ý kiến"
+
+#: archive.php:51 index.php:55
+msgid "Page"
+msgstr "Trang"
+
+#: archive.php:50 index.php:54
+msgid "Next"
+msgstr "Kế tiếp"
+
+#: archive.php:49 index.php:53
+msgid "Previous"
+msgstr "Trước"
+
+#: 404.php:21
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr "Có vẻ như không có gì được tìm thấy tại địa điểm này. Có thể thử một trong các liên kết dưới đây hoặc tìm kiếm?"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Rất tiếc! Không thể tìm thấy trang đó."
+
+#: template-parts/content-page.php:24 template-parts/content.php:52
+msgid "Pages:"
+msgstr "Trang:"
+
+#: template-parts/content-none.php:25
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Rất tiếc, không có nội dung nào khớp với yêu cầu tìm kiếm của bạn. Hãy thử lại với các từ khóa khác."
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Không có kết quả"
+
+#: functions.php:175
+msgid "Footer Three"
+msgstr "Cuối trang Ba"
+
+#: functions.php:165
+msgid "Footer Two"
+msgstr "Cuối trang hai"
+
+#: functions.php:155
+msgid "Footer One"
+msgstr "Cuối trang đầu tiên"
+
+#: inc/customizer.php:512 inc/extras.php:98 inc/widget-social-links.php:71
+#: inc/widget-social-links.php:148
+msgid "Google Plus"
+msgstr "Google Plus"
+
+#: inc/widget-social-links.php:25
+msgid "RARA: Social Links"
+msgstr "RARA: Liên kết mạng xã hội"
+
+#: inc/widget-recent-post.php:26
+msgid "A Recent Post Widget"
+msgstr "Widget bài viết gần đây"
+
+#: inc/widget-recent-post.php:25
+msgid "RARA: Recent Post"
+msgstr "RARA: Bài viết gần đây"
+
+#: inc/widget-featured-post.php:121 inc/widget-popular-post.php:130
+#: inc/widget-recent-post.php:129
+msgid "Show Post Thumbnail"
+msgstr "Hiển thị hình thu nhỏ bài viết"
+
+#: inc/widget-popular-post.php:26
+msgid "A Popular Post Widget"
+msgstr "Widget bài viết phổ biến"
+
+#: inc/widget-popular-post.php:25
+msgid "RARA: Popular Post"
+msgstr "RARA: Bài viết phổ biến"
+
+#: inc/metabox.php:23
+msgid "Right sidebar (default)"
+msgstr "Thanh bên phải (mặc định)"
+
+#: inc/template-tags.php:71
+msgid "1 Comment"
+msgstr "1 Bình luận"
+
+#: inc/customizer.php:181
+msgid "Slide"
+msgstr "Trình chiếu"
+
+#: inc/customizer.php:263
+msgid "Enable Featured Post Section"
+msgstr "Bật mục bài viết nổi bật"
+
+#: inc/widget-popular-post.php:84 inc/widget-recent-post.php:83
+#: template-parts/content.php:63
+msgid "Read More"
+msgstr "Đọc tiếp"
+
+#: inc/customizer.php:18
+msgid "Choose Post"
+msgstr "Chọn bài viết"
+
+#: comments.php:104
+msgid "Website"
+msgstr "Website"
+
+#: comments.php:101
+msgid "Email*"
+msgstr "Email*"
+
+#: comments.php:79
+msgid "Comments are closed."
+msgstr "Đã đóng bình luận."
+
+#: comments.php:64
+msgid "Newer Comments"
+msgstr "Các bình luận mới hơn"
+
+#: comments.php:63
+msgid "Older Comments"
+msgstr "Các bình luận cũ hơn"
+
+#: comments.php:60
+msgid "Comment navigation"
+msgstr "Điều hướng bình luận"
+
+#: functions.php:145
+msgid "Right Sidebar"
+msgstr "Sidebar bên phải"
+
+#: inc/widget-social-links.php:26
+msgid "A Social Links Widget"
+msgstr "Tiện ích liên kết mạng xã hội"
+
+#: inc/widget-popular-post.php:135 inc/widget-recent-post.php:134
+msgid "Show Post Date"
+msgstr "Hiển thị ngày bài viết"
+
+#: inc/widget-featured-post.php:26
+msgid "A Featured Post Widget"
+msgstr "Widget bài viết nổi bật"
+
+#: inc/widget-featured-post.php:25
+msgid "RARA: Featured Post"
+msgstr "RARA: Bài viết nổi bật"
+
+#: inc/metabox.php:40
+msgid "Choose Sidebar Template"
+msgstr "Chọn Mẫu Sidebar"
+
+#: inc/metabox.php:13
+msgid "Sidebar Layout"
+msgstr "Bố cục Sidebar"
+
+#: inc/extras.php:147
+msgid "Your comment is awaiting moderation."
+msgstr "Bình luận của bạn đang chờ kiểm duyệt."
+
+#: inc/customizer.php:368
+msgid "Enable Social Links"
+msgstr "Bật liên kết mạng xã hội"
+
+#: inc/customizer.php:349
+msgid "Social Settings"
+msgstr "Thiết lập mạng xã hội"
+
+#: inc/customizer.php:104
+msgid "Enable Slider Loop"
+msgstr "Bật thanh vòng lặp trình chiếu"
+
+#: inc/template-tags.php:71
+msgid "Leave a comment"
+msgstr "Để lại bình luận"
+
+#: inc/customizer.php:198
+msgid "Slider Speed"
+msgstr "Tốc độ Trình chiếu"
+
+#: inc/customizer.php:176
+msgid "Choose Slider Animation"
+msgstr "Chọn Slider linh hoạt"
+
+#: inc/customizer.php:158
+msgid "Enable Slider Caption"
+msgstr "Bật Phụ đề Slider"
+
+#: inc/customizer.php:86
+msgid "Enable Slider Auto Transition"
+msgstr "Bật tự động chuyển trình chiếu"
+
+#: inc/customizer.php:337
+msgid "Select Featured Post Three"
+msgstr "Chọn ba bài viết nổi bật"
+
+#: inc/customizer.php:318
+msgid "Select Featured Post Two"
+msgstr "Chọn hai bài viết nổi bật"
+
+#: inc/customizer.php:299
+msgid "Select Featured Post One"
+msgstr "Chọn một bài viết nổi bật"
+
+#: inc/customizer.php:350
+msgid "Leave blank if you do not want to show the social link."
+msgstr "Để trống nếu bạn không muốn hiển thị liên kết mạng xã hội."
+
+#. Author URI of the plugin/theme
+msgid "http://raratheme.com/"
+msgstr "http://raratheme.com/"
+
+#. Author of the plugin/theme
+msgid "Rara Theme"
+msgstr "Rara Theme"
+
+#. Theme URI of the plugin/theme
+msgid "http://raratheme.com/wordpress-themes/halcyon/"
+msgstr "http://raratheme.com/wordpress-themes/halcyon/"
