@@ -3079,6 +3079,16 @@ body.page .main-navigation {
   }
 }
 
+.make-form-tn .page-content, .make-form-tn .page-title{
+  margin: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .make-form-tn .page-content, .make-form-tn .page-title {
+    margin: 20px;
+  }
+}
+
 .error-404.not-found .search-submit, .no-results.not-found .search-submit {
   vertical-align: middle;
   margin: 1rem 0;

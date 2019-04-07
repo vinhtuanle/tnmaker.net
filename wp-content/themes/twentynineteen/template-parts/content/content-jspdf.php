@@ -11,53 +11,64 @@
 
 ?>
 
-<section class="no-results not-found">
+<section class="make-form-tn">
     <header class="page-header">
         <h1 class="page-title">JS Pdf</h1>
     </header><!-- .page-header -->
 
     <div class="page-content">
         <div class="row">
-            <div class="col-md-4 col-xs-12">
+            <div class="col-md-3 col-xs-12">
                 <form>
                     <div class="form-group">
+                        <label>Chọn mẫu đề trắc nghiệm</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>FORM20_VI_6SBD_NOLABEL</option>
+                            <option>FORM40_VI_6SBD_NOLABEL</option>
+                            <option>FORM60_VI_6SBD_NOLABEL</option>
+                            <option>FORM100_VI_6SBD_NOLABEL</option>
+                            <option>FORM120_VI_6SBD_NOLABEL</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
                         <label>Số lượng câu trắc nghiệm</label>
-                        <input type="number" class="form-control" placeholder="Điền số câu hỏi" id="number_question">
+                        <input type="number" min="1" max="120" class="form-control" placeholder="Điền số câu hỏi" id="number_question">
+                    </div>
+                    <div class="form-group">
+                        <label for="customRange1">Độ đậm phiếu tô (<span style="color: rgb(0, 0, 0,0.5);">50%</span>)</label>
+                        <div class="row">
+                            <div class="col-md-1">1</div>
+                            <div class="col-md-10">
+                                <input type="range" class="custom-range" min='1' value="128" max="255" id="customRange1">
+                            </div>
+                            <div class="col-md-1">100</div>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label>Chỉnh sửa chi tiết</label>
                         <div class="row" style="font-size : 0.7em;">
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-xs-12">
                                 <label>Kích thước</label>
                                 <input type="number" class="form-control">
                             </div>
-                            <div class="col-md-4">
-                                <label>Font</label>
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                    <option style="font-family: cursive;">cursive</option>
-                                    <option style="font-family: cursive;">fantasy</option>
-                                    <option style="font-family: monospace;">monospace</option>
-                                </select>
-                            </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-xs-12">
                                 <label>Kiểu</label>
-                                <div class="btn-group" role="group" aria-label="Basic example">
-                                    <button type="button" class="btn btn-outline-primary" style="font-weight : bold;">B</button>
-                                    <button type="button" class="btn btn-outline-secondary" style="font-style: italic;">I</button>
-                                    <button type="button" class="btn btn-outline-success" style="text-decoration: underline">U</button>
+                                <div style="width : 100%;" class="btn-group" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-outline-primary" style="font-weight : bold;">Đậm</button>
+                                    <button type="button" class="btn btn-outline-secondary" style="font-style: italic;">Nghiêng</button>
                                 </div>
                             </div>
                         </div>
-                        <label>Nội dung</label>
+                        <label style="font-size : 0.7em;">Nội dung</label>
                         <textarea disabled class="form-control" id="preview"></textarea>
                     </div>
 
                 </form>
 
             </div>
-            <div class="col-md-8 col-xs-12" style="text-align : right;">
+            <div class="col-md-9 col-xs-12" style="text-align : center;">
                 <!-- <button type="button" class="btn btn-primary btn-sm" onClick="add_input()" type="submit" style="float : right;">Thêm</button> -->
-                <div class="page" style="background-size:contain  ;background-image: url('http://localhost/tnmaker/wp-content/themes/twentynineteen/img/form_bai_thi.jpg')">
+                <div id="preview_html" class="page" style="background-size:contain  ;background-image: url('http://localhost/tnmaker/wp-content/themes/twentynineteen/img/form_bai_thi.jpg')">
                     <div class='resize-container' id='resize-container'>
                         <div class="row">
                             <div class="col-md-6">
@@ -109,6 +120,8 @@
             document.getElementById("input8").value = " ĐIỂM SỐ"
 
             document.getElementById("input9").value = ""
+
+            
         </script>
     </div><!-- .page-content -->
 </section><!-- .no-results -->
