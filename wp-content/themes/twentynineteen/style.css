@@ -907,7 +907,7 @@ textarea {
   display: block;
   width: 100%;
   max-width: 100%;
-  resize: vertical;
+  resize: both;
 }
 
 form p {
@@ -4305,4 +4305,35 @@ svg {
   position: absolute;
   width: 100%;
   min-height: 297mm;
+}
+
+.text-area-noborder {
+  padding : 0px !important;
+  border: 0px !important;
+  background-color: transparent;
+}
+
+.text-area-border {
+  background-color: transparent;
+  padding : 2px !important;
+  border-radius: 2mm !important;
+  border: solid 1px #000000 !important;
+}
+@media print {
+  .page {
+      background-color: white;
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      margin: 0;
+      padding: 15px;
+      font-size: 14px;
+      line-height: 18px;
+  }
+}
+
+* {
+  transition: none !important;
 }

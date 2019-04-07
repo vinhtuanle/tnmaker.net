@@ -56,234 +56,59 @@
 
             </div>
             <div class="col-md-8 col-xs-12" style="text-align : right;">
-                <button type="button" class="btn btn-primary btn-sm" onClick="add_input()" type="submit" style="float : right;">Thêm</button>
-                <div class="page">
+                <!-- <button type="button" class="btn btn-primary btn-sm" onClick="add_input()" type="submit" style="float : right;">Thêm</button> -->
+                <div class="page" style="background-size:contain  ;background-image: url('http://localhost/tnmaker/wp-content/themes/twentynineteen/img/form_bai_thi.jpg')">
                     <div class='resize-container' id='resize-container'>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <textarea row="2" id='input1' class="text-area-noborder" style="margin-top : 19mm;margin-left : 40mm;font-size: 3.5mm;font-weight: bold;"></textarea>
+                            </div>
+                            <div class="col-md-6">
+                                <textarea row="2" id='input2' class="text-area-noborder" style="margin-top : 19mm;font-size:4mm; font-weight: bold;"></textarea>
+                            </div>
+                        </div>
+                        <div class="row" style="height: 8mm !important;">
+                            <div class="col-md-7">
+                                <textarea row="1" id='input3' class="text-area-noborder" style="margin-top : 0mm;margin-left : 50mm;font-size: 4mm; font-weight: bold;"></textarea>
+                            </div>
+                            <div class="col-md-5">
+                                <textarea row="1" id='input4' class="text-area-noborder" style="margin-top : 0mm;font-size:4mm;font-weight: bold;"></textarea>
+                            </div>
+                        </div>
+                        <div class="row" style="height: 8mm !important;">
+                            <div class="col-md-7">
+                                <textarea row="1" id='input5' class="text-area-noborder" style="margin-top : 0mm;margin-left : 50mm;font-size: 4mm;font-weight: bold;"></textarea>
+                            </div>
+                            <div class="col-md-5">
+                                <textarea row="1" id='input6' class="text-area-noborder" style="margin-top : 0mm;font-size:4mm;font-weight: bold;"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-7">
+                                <textarea row="6" class="text-area-border" id='input7' style="margin-top : 0mm;margin-left : 40mm;font-size: 3mm;max-width:80mm;min-height: 100px"></textarea>
+                            </div>
+                            <div class="col-md-5">
+                                <textarea row="1" id='input8' class="text-area-noborder" style="margin-top : 0mm;margin-left:20mm;font-size:4mm;font-weight: bold; width : 30mm;"></textarea>
+                                <textarea row="1" id='input9' class="text-area-border" style="margin-top : 0mm;margin-left:15mm;font-size:4mm;font-weight: bold;width : 30mm;"></textarea>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <script>
-            var list = []
-            var max = 0
+            document.getElementById("input1").value = "      SỞ GD-ĐT .....................\n TRƯỜNG THPT ..........................."
+            document.getElementById("input2").value = " PHIẾU TRẢ LỜI TRẮC NGHIỆM"
+            document.getElementById("input3").value = "      KIỂM TRA MÔN ............................."
+            document.getElementById("input4").value = " THỜI GIAN...................."
+            document.getElementById("input5").value = "      HỌ VÀ TÊN ......................................."
+            document.getElementById("input6").value = " LỚP...................."
 
-            function submit_form() {
-                console.log("Click")
+            document.getElementById("input7").value = "Lưu ý:\n-Ghi đầy đủ các mục, giữ phiếu phẳng\n-Bôi đen đáp án tương ứng với số câu trong đề\n- Bài kiểm tra được chấm bằng máy, học sinh tô\n đậm, vừa khít với ô tròn giới hạn. TUYỆT ĐỐI\n không sửa chữa đáp án."
+            document.getElementById("input8").value = " ĐIỂM SỐ"
 
-            }
-
-            function add_input() {
-                var container = document.getElementById("resize-container")
-
-                var input = document.createElement("textarea")
-                input.style.height = "100%"
-                input.id = "input" + list.length
-                var close = document.createElement("button")
-                close.style = "height : 5px;margin-right: 15px;width: 5px;"
-                close.className = "close"
-                close.insertAdjacentHTML('beforeend', '<span aria-hidden="true">&times;</span>')
-
-                var tmp = document.createElement("div")
-                tmp.className = "resize-drag"
-                tmp.appendChild(close)
-                tmp.appendChild(input)
-                console.log(tmp.offsetTop)
-                tmp.setAttribute('data-x', 0 - tmp.offsetTop);
-                tmp.setAttribute('data-y', tmp.offsetLeft);
-                list.push({
-                    id: 'input' + max,
-                    content: '',
-                    style: {
-
-                    },
-                    position: {
-                        x: '',
-                        y: '',
-                    }
-                })
-                max += 1
-                container.appendChild(tmp)
-                close.onclick = function() {
-                    tmp.remove()
-                    for (let i = 0; i < list.length; i++) {
-                        if (list[i].id === input.id) {
-                            list.splice(i, 1)
-                            break
-                        }
-                    }
-                }
-                tmp.onclick = function() {
-                    let content = $(input).val()
-                    $('#preview').val(content)
-                    let x = tmp.getAttribute('tn-x')
-                    let y = tmp.getAttribute('tn-y')
-                    list.map((item, i) => {
-                        if (item.id === input.id) {
-                            item.content = content
-                            item.position = {
-                                x: tmp.getAttribute('tn-x'),
-                                y: tmp.getAttribute('tn-y')
-                            }
-                        }
-                    })
-                    console.log(list)
-                }
-                let tn_x = tmp.offsetLeft
-                let tn_y = tmp.offsetTop
-                tmp.setAttribute('tn-x', tn_x)
-                tmp.setAttribute('tn-y', tn_y)
-                interact(tmp).draggable({
-                        onmove: function(event) {
-
-                            var target = event.target;
-
-                            var x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx;
-                            var y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
-                            // translate the element
-                            target.style.webkitTransform = target.style.transform = 'translate(' + x + 'px, ' + y + 'px)';
-
-                            // update the posiion attributes
-                            target.setAttribute('data-x', x);
-                            target.setAttribute('data-y', y);
-                            target.setAttribute('tn-x', tn_x + x);
-                            target.setAttribute('tn-y', tn_y + y);
-                        },
-                        modifiers: [
-                            interact.modifiers.restrict({
-                                restriction: 'parent',
-                                elementRect: {
-                                    top: 0,
-                                    left: 0,
-                                    bottom: 1,
-                                    right: 1
-                                }
-                            })
-                        ]
-                    }).resizable({
-                        // resize from all edges and corners
-                        edges: {
-                            left: true,
-                            right: true,
-                            bottom: true,
-                            top: true
-                        },
-
-                        modifiers: [
-                            // keep the edges inside the parent
-                            interact.modifiers.restrictEdges({
-                                outer: 'parent',
-                                endOnly: true,
-                            }),
-
-                            // minimum size
-                            // interact.modifiers.restrictSize({
-                            //     min: {
-                            //         width: 100,
-                            //         height: 50
-                            //     },
-                            // }),
-                        ],
-
-                        inertia: true
-                    })
-                    .on('resizemove', function(event) {
-                        var target = event.target,
-                            x = (parseFloat(target.getAttribute('data-x')) || 0),
-                            y = (parseFloat(target.getAttribute('data-y')) || 0);
-
-                        // update the element's style
-                        target.style.width = event.rect.width + 'px';
-                        target.style.height = event.rect.height + 'px';
-
-                        // translate when resizing from top or left edges
-                        x += event.deltaRect.left;
-                        y += event.deltaRect.top;
-
-                        target.style.webkitTransform = target.style.transform =
-                            'translate(' + x + 'px,' + y + 'px)';
-
-                        target.setAttribute('data-x', x);
-                        target.setAttribute('data-y', y);
-                        // target.textContent = Math.round(event.rect.width) + '\u00D7' + Math.round(event.rect.height);
-                    });
-            }
-
-
-
-            // interact('.resize-drag')
-            //     .draggable({
-            //         onmove: function(event) {
-
-            //             var target = event.target;
-
-            //             var x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx;
-            //             var y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
-            //             // translate the element
-            //             target.style.webkitTransform = target.style.transform = 'translate(' + x + 'px, ' + y + 'px)';
-
-            //             // update the posiion attributes
-            //             target.setAttribute('data-x', x);
-            //             target.setAttribute('data-y', y);
-            //         },
-            //         modifiers: [
-            //             interact.modifiers.restrict({
-            //                 restriction: 'parent',
-            //                 elementRect: {
-            //                     top: 0,
-            //                     left: 0,
-            //                     bottom: 1,
-            //                     right: 1
-            //                 }
-            //             })
-            //         ]
-            //     })
-            //     .resizable({
-            //         // resize from all edges and corners
-            //         edges: {
-            //             left: true,
-            //             right: true,
-            //             bottom: true,
-            //             top: true
-            //         },
-
-            //         modifiers: [
-            //             // keep the edges inside the parent
-            //             interact.modifiers.restrictEdges({
-            //                 outer: 'parent',
-            //                 endOnly: true,
-            //             }),
-
-            //             // minimum size
-            //             interact.modifiers.restrictSize({
-            //                 min: {
-            //                     width: 100,
-            //                     height: 50
-            //                 },
-            //             }),
-            //         ],
-
-            //         inertia: true
-            //     })
-            //     .on('resizemove', function(event) {
-            //         var target = event.target,
-            //             x = (parseFloat(target.getAttribute('data-x')) || 0),
-            //             y = (parseFloat(target.getAttribute('data-y')) || 0);
-
-            //         // update the element's style
-            //         target.style.width = event.rect.width + 'px';
-            //         target.style.height = event.rect.height + 'px';
-
-            //         // translate when resizing from top or left edges
-            //         x += event.deltaRect.left;
-            //         y += event.deltaRect.top;
-
-            //         target.style.webkitTransform = target.style.transform =
-            //             'translate(' + x + 'px,' + y + 'px)';
-
-            //         target.setAttribute('data-x', x);
-            //         target.setAttribute('data-y', y);
-            //         // target.textContent = Math.round(event.rect.width) + '\u00D7' + Math.round(event.rect.height);
-            //     });
+            document.getElementById("input9").value = ""
         </script>
     </div><!-- .page-content -->
-</section><!-- .no-results --> 
+</section><!-- .no-results -->
