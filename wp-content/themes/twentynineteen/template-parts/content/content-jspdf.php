@@ -64,14 +64,14 @@
                     </div>
                     <div class="row">
                         <button type="button" onclick="preview()" class="btn btn-outline-primary col-md-6 col-xs-12"><i class="fas fa-clipboard-check"></i>Xem trước</button>
-                        <button type="submit" onclick="download_file()" class="btn btn-success col-md-6 col-xs-12"><i class="fas fa-download"></i>Tải phiếu chấm</button>
+                        <button type="button" onclick="download_file()" class="btn btn-success col-md-6 col-xs-12"><i class="fas fa-download"></i>Tải phiếu chấm</button>
                     </div>
                 </form>
 
             </div>
             <div class="col-md-9 col-xs-12" style="text-align : center;">
                 <!-- <button type="button" class="btn btn-primary btn-sm" onClick="add_input()" type="submit" style="float : right;">Thêm</button> -->
-                <div id="preview_html" class="page" style="background-size:contain  ;background-image: url('http://localhost/tnmaker/wp-content/themes/twentynineteen/img/form_bai_thi.jpg')">
+                <div id="preview_html" class="page" style="background-size:contain  ;background-image: url('<?php bloginfo('template_directory'); ?>/img/form20_vi_6sbd_nolabel.jpg')">
                     <div class='resize-container' id='resize-container'>
                         <div class="row">
                             <div class="col-md-6">
@@ -195,6 +195,7 @@
                     number_ques.setAttribute("max", 20)
                     config.number_of_question = 20
                     config.form = 20
+                    document.getElementById("preview_html").style="background-size:contain  ;background-image: url('<?php bloginfo('template_directory'); ?>/img/form20_vi_6sbd_nolabel.jpg')"
                 }
 
                 if (tmp == 40) {
@@ -202,6 +203,7 @@
                     number_ques.setAttribute("max", 40)
                     config.number_of_question = 40
                     config.form = 40
+                    document.getElementById("preview_html").style="background-size:contain  ;background-image: url('<?php bloginfo('template_directory'); ?>/img/form40_vi_6sbd_nolabel.jpg')"
                 }
 
                 if (tmp == 60) {
@@ -209,6 +211,7 @@
                     number_ques.setAttribute("max", 60)
                     config.number_of_question = 60
                     config.form = 60
+                    document.getElementById("preview_html").style="background-size:contain  ;background-image: url('<?php bloginfo('template_directory'); ?>/img/form60_vi_6sbd_nolabel.jpg')"
                 }
 
                 if (tmp == 100) {
@@ -216,6 +219,7 @@
                     number_ques.setAttribute("max", 100)
                     config.number_of_question = 100
                     config.form = 100
+                    document.getElementById("preview_html").style="background-size:contain  ;background-image: url('<?php bloginfo('template_directory'); ?>/img/form100_vi_6sbd_nolabel.jpg')"
                 }
 
                 if (tmp == 120) {
