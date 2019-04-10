@@ -71,7 +71,7 @@
             </div>
             <div class="col-md-9 col-xs-12" style="text-align : center;">
                 <!-- <button type="button" class="btn btn-primary btn-sm" onClick="add_input()" type="submit" style="float : right;">Thêm</button> -->
-                <div id="preview_html" class="page" style="background-size:contain  ;background-image: url('<?php bloginfo('template_directory'); ?>/img/form20_vi_6sbd_nolabel.jpg')">
+                <div id="preview_html" class="page-a4" style="background-size:contain  ;background-image: url('<?php bloginfo('template_directory'); ?>/img/form20_vi_6sbd_nolabel.jpg')">
                     <div class='resize-container' id='resize-container'>
                         <div class="row">
                             <div class="col-md-6">

@@ -5,7 +5,6 @@ Theme Name: Twenty Nineteen
 Adding print support. The print styles are based on the the great work of
 Andreas Hecht in https://www.jotform.com/blog/css-perfect-print-stylesheet-98272/.
 */
-
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -15,7 +14,6 @@ Andreas Hecht in https://www.jotform.com/blog/css-perfect-print-stylesheet-98272
 # Links
 # Visibility
 --------------------------------------------------------------*/
-
 @media print {
   /* Margins */
   @page {
@@ -37,7 +35,14 @@ Andreas Hecht in https://www.jotform.com/blog/css-perfect-print-stylesheet-98272
   h1 {
     font-size: 24pt;
   }
-  h2, h3, h4, .has-regular-font-size, .has-large-font-size, h2.author-title, p.author-bio, .comments-title, h3 {
+  h2,
+  h3,
+  h4,
+  .has-regular-font-size,
+  .has-large-font-size,
+  h2.author-title,
+  p.author-bio,
+  .comments-title, h3 {
     font-size: 14pt;
     margin-top: 25px;
   }
@@ -48,7 +53,12 @@ Andreas Hecht in https://www.jotform.com/blog/css-perfect-print-stylesheet-98272
   blockquote {
     page-break-inside: avoid;
   }
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     page-break-after: avoid;
     page-break-inside: avoid;
   }
@@ -75,7 +85,7 @@ Andreas Hecht in https://www.jotform.com/blog/css-perfect-print-stylesheet-98272
   a[href^=http]:after {
     content: " < " attr(href) "> ";
   }
-  a:after>img {
+  a:after > img {
     content: "";
   }
   article a[href^="#"]:after {
@@ -85,10 +95,22 @@ Andreas Hecht in https://www.jotform.com/blog/css-perfect-print-stylesheet-98272
     content: " < " attr(href) "> ";
   }
   /* Visibility */
-  .main-navigation, .site-title+.main-navigation, .social-navigation, .site-branding-container:before, .entry .entry-title:before, .entry-footer, .author-description:before, .post-navigation, .widget-area, .comment-form-flex, .comment-reply, .comment .comment-metadata .edit-link {
+  .main-navigation,
+  .site-title + .main-navigation,
+  .social-navigation,
+  .site-branding-container:before,
+  .entry .entry-title:before,
+  .entry-footer,
+  .author-description:before,
+  .post-navigation,
+  .widget-area,
+  .comment-form-flex,
+  .comment-reply,
+  .comment .comment-metadata .edit-link {
     display: none;
   }
-  .entry .entry-content .wp-block-button .wp-block-button__link, .entry .entry-content .button {
+  .entry .entry-content .wp-block-button .wp-block-button__link,
+  .entry .entry-content .button {
     color: #000;
     background: none;
   }
@@ -96,11 +118,25 @@ Andreas Hecht in https://www.jotform.com/blog/css-perfect-print-stylesheet-98272
   .site-header.featured-image {
     min-height: 0;
   }
-  .site-header.featured-image .main-navigation a, .site-header.featured-image .main-navigation a+svg, .site-header.featured-image .social-navigation a, .site-header.featured-image .site-title a, .site-header.featured-image .site-featured-image a, .site-header.featured-image .site-branding .site-title, .site-header.featured-image .site-branding .site-description, .site-header.featured-image .main-navigation a:after, .site-header.featured-image .main-navigation .main-menu>li.menu-item-has-children:after, .site-header.featured-image .main-navigation li, .site-header.featured-image .social-navigation li, .site-header.featured-image .entry-meta, .site-header.featured-image .entry-title, .site-header.featured-image#masthead .site-title a {
+  .site-header.featured-image .main-navigation a,
+  .site-header.featured-image .main-navigation a + svg,
+  .site-header.featured-image .social-navigation a,
+  .site-header.featured-image .site-title a,
+  .site-header.featured-image .site-featured-image a,
+  .site-header.featured-image .site-branding .site-title,
+  .site-header.featured-image .site-branding .site-description,
+  .site-header.featured-image .main-navigation a:after,
+  .site-header.featured-image .main-navigation .main-menu > li.menu-item-has-children:after,
+  .site-header.featured-image .main-navigation li,
+  .site-header.featured-image .social-navigation li,
+  .site-header.featured-image .entry-meta,
+  .site-header.featured-image .entry-title,
+  .site-header.featured-image#masthead .site-title a {
     color: #000;
     text-shadow: none;
   }
-  .site-header.featured-image .site-featured-image .entry-header, .site-header.featured-image .site-branding-container {
+  .site-header.featured-image .site-featured-image .entry-header,
+  .site-header.featured-image .site-branding-container {
     margin-top: 0;
     margin-bottom: 0;
   }

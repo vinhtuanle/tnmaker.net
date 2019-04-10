@@ -1,0 +1,75 @@
+.page {
+    position: relative;
+    width: 210mm !important;
+    min-height: 297mm;
+    margin: 0 auto;
+    border: 1px #D3D3D3 solid;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  
+  .subpage {
+    padding: 1cm;
+    border: 5px red solid;
+    height: 257mm;
+    outline: 2cm #FFEAEA solid;
+  }
+  
+  .item-page {
+    position: absolute !important;
+  }
+  
+  .resize-drag {
+    background-color: rgb(247, 241, 241);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: sans-serif;
+    border-radius: 8px;
+    touch-action: none;
+    width: 120px;
+    /* This makes things *much* easier */
+    box-sizing: border-box;
+  }
+  
+  .resize-container {
+    position: absolute;
+    width: 100%;
+    min-height: 297mm;
+  }
+  
+  .text-area-noborder {
+    padding : 0px !important;
+    border: 0px !important;
+    background-color: transparent;
+  }
+  
+  .text-area-border {
+    background-color: transparent;
+    padding : 2px !important;
+    border-radius: 2mm !important;
+    border: solid 1px #000000 !important;
+  }
+  @media print {
+    .page {
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 15px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+  }
+  
+  * {
+    transition: none !important;
+  }

@@ -4272,7 +4272,7 @@ svg {
   box-shadow: 0 0 0 2px #0073aa;
 }
 
-.page {
+.page-a4 {
   position: relative;
   width: 210mm !important;
   min-height: 297mm;
@@ -4283,7 +4283,7 @@ svg {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-@page {
+@page-a4 {
   size: A4;
   margin: 0;
 }
@@ -4330,7 +4330,7 @@ svg {
   border: solid 1px #000000 !important;
 }
 @media print {
-  .page {
+  .page-a4 {
       background-color: white;
       height: 100%;
       width: 100%;
