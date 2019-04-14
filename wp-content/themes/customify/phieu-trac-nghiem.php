@@ -131,8 +131,27 @@ Template Name: Phieu Trac Nghiem
                                     </div>
                                 </div>
                             </div>
+							<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							  <div class="modal-dialog modal-lg" role="document">
+								<div class="modal-content">
+								  <div class="modal-header" style="padding : 10px;">
+									<h6 class="modal-title" id="exampleModalLabel">Xem trước</h6>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									  <span aria-hidden="true">&times;</span>
+									</button>
+								  </div>
+								  <div class="modal-body" style="padding : 0px;">
+									<iframe id="modal_show_pdf" width='100%' height='600' ></iframe>
+								  </div>
+								  <div class="modal-footer" style="padding : 10px;">
+									<button type="button" style="font-size : 18px" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+									<button type="button" style="font-size : 18px" class="btn btn-primary" onClick="download_template()">Tải phiếu</button>
+								  </div>
+								</div>
+							  </div>
+							</div>
                             <script>
-                                var config, current;
+                                var config, current,output;
                                 init()
 
 
@@ -292,6 +311,17 @@ Template Name: Phieu Trac Nghiem
                                 function onSubmitForm(e) {
 									e.preventDefault()
 									console.log(config)
+									
+									output = new jsPDF();
+									output.text('ACT', 130, 20);
+									
+									let string = output.output('datauristring',{"filename":"phieu-trac-nghiem.pdf"})
+									document.getElementById('modal_show_pdf').src = string
+									$("#exampleModal").modal('show')
+								}
+								
+								function download_template(){
+									output.save("phieu-trac-nghiem.pdf")
 								}
                             </script>
                         </div><!-- .page-content -->
