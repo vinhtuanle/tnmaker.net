@@ -19,10 +19,18 @@ Template Name: Phieu Trac Nghiem
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/tracnghiem.css">
 	<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/css/bootstrap4-toggle.min.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/js/bootstrap4-toggle.min.js"></script>
+  
 </head>
 
 <body>
     <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
+    <!-- <script type="text/javascript" src="../wp-content/themes/customify/libs/jspdf.debug.js"></script> -->
+    <!-- <script type="text/javascript" src="../wp-content/themes/customify/libs/ttfsupport.js"></script> -->
+    <!-- <script type="text/javascript" src="../wp-content/themes/customify/libs/utf8.js"></script> -->
+    <script type="text/javascript" src="../wp-content/themes/customify/fonts/UVNAnhHai_R-normal.js"></script>
+    <script type="text/javascript" src="../wp-content/themes/customify/drawpdf/drawPDF.js"></script>
+
+
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<a class="navbar-brand" href="/tnmaker">Trang chủ</a>
 		
@@ -43,10 +51,10 @@ Template Name: Phieu Trac Nghiem
                                         <div class="form-group">
                                             <label>Chọn mẫu đề trắc nghiệm</label>
                                             <select class="form-control" id="type_form" onchange="onChangeTypeForm()">
-                                                <option value="20">FORM20_VI_6SBD_NOLABEL</option>
-                                                <option value="40">FORM40_VI_6SBD_NOLABEL</option>
-                                                <option value="60">FORM60_VI_6SBD_NOLABEL</option>
-                                                <option value="100">FORM100_VI_6SBD_NOLABEL</option>
+                                                <option value="20">Phiếu chấm 20</option>
+                                                <option value="40">Phiếu chấm 40</option>
+                                                <option value="60">Phiếu chấm 60</option>
+                                                <option value="100">Phiếu chấm 100</option>
                                             </select>
                                         </div>
                                         <div class="form-group">
@@ -131,7 +139,7 @@ Template Name: Phieu Trac Nghiem
                                     </div>
                                 </div>
                             </div>
-							<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 							  <div class="modal-dialog modal-lg" role="document">
 								<div class="modal-content">
 								  <div class="modal-header" style="padding : 10px;">
@@ -151,10 +159,9 @@ Template Name: Phieu Trac Nghiem
 							  </div>
 							</div>
                             <script>
-                                var config, current,output;
+                                var config, current;
+                                var drawPDF = new drawPDF(); ;
                                 init()
-
-
                                 function init() {
                                     document.getElementById("input0").value = "      SỞ GD-ĐT .....................\n TRƯỜNG THPT ..........................."
                                     document.getElementById("input1").value = " PHIẾU TRẢ LỜI TRẮC NGHIỆM"
@@ -186,7 +193,7 @@ Template Name: Phieu Trac Nghiem
                                     style[6].bold = false
                                     style[6].size = 10
                                     config = {
-                                        form: 1,
+                                        form: 20,
                                         number_of_question: 20,
                                         alpha: 128,
                                         style: style,
@@ -310,19 +317,40 @@ Template Name: Phieu Trac Nghiem
 								
                                 function onSubmitForm(e) {
 									e.preventDefault()
-									console.log(config)
-									
-									output = new jsPDF();
-									output.text('ACT', 130, 20);
-									
-									let string = output.output('datauristring',{"filename":"phieu-trac-nghiem.pdf"})
+                                    console.log(config)
+                                    // draw pdf
+                                    drawPDF.init(config.form, config.number_of_question, config.alpha); 
+                                    drawPDF.drawBoundRect();
+                                    drawPDF.drawInsideRect(config.form);
+                                    for (var i = 0; i < 1; i++)
+                                    {
+                                        drawPDF.drawRectTextFromHTML(false,
+                                        config.style[i].x,
+                                        config.style[i].y,
+                                        config.style[i].x + config.style[i].w,
+                                        config.style[i].y+ config.style[i].h,
+                                        config.style[i].content,
+                                        config.style[i].size,            
+                                        config.style[i].bold,
+                                        config.style[i].italic);
+                                    }
+                                    drawPDF.drawCopyRight();
+                                    drawPDF.drawRectSbdMade(config.form, 0);
+                                    drawPDF.drawRectSbdMade(config.form, 1)
+                                    drawPDF.drawSbdMade(config.form);
+                                    drawPDF.drawLabelNumber(config.form);
+                                    drawPDF.drawCircle(config.form, config.number_of_question);
+                                    drawPDF.drawLabel(config.form, 0);
+                                    drawPDF.drawLabel(config.form, 1);
+                                    // let string = output.output('datauristring',{"filename":"phieu-trac-nghiem.pdf"})
+                                    let string = drawPDF.getOutput();
 									document.getElementById('modal_show_pdf').src = string
 									$("#exampleModal").modal('show')
+                                } 
+                                function download_template(){
+                                    drawPDF.savePDF(config.form);													 
 								}
-								
-								function download_template(){
-									output.save("phieu-trac-nghiem.pdf")
-								}
+                                
                             </script>
                         </div><!-- .page-content -->
                     </section><!-- .no-results -->
