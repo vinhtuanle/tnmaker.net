@@ -13,20 +13,17 @@ Template Name: Phieu Trac Nghiem
     <link rel="profile" href="https://gmpg.org/xfn/11" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/tracnghiem.css">
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/css/bootstrap4-toggle.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/js/bootstrap4-toggle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/tracnghiem.css">
-	<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/css/bootstrap4-toggle.min.css" rel="stylesheet">
-	<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/js/bootstrap4-toggle.min.js"></script>
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
   
 </head>
 
 <body>
-    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
-    <!-- <script type="text/javascript" src="../wp-content/themes/customify/libs/jspdf.debug.js"></script> -->
-    <!-- <script type="text/javascript" src="../wp-content/themes/customify/libs/ttfsupport.js"></script> -->
-    <!-- <script type="text/javascript" src="../wp-content/themes/customify/libs/utf8.js"></script> -->
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/fonts/UVNAnhHai_R-normal.js"></script>
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/drawpdf/drawPDF.js"></script>
 
@@ -190,6 +187,17 @@ Template Name: Phieu Trac Nghiem
                                             h: 10,
                                         })
                                     }
+                                    style[0] = Object.assign({}, style[0],{x : 40,y : 19, h : 10, w : 70})
+                                    style[1] = Object.assign({}, style[1],{x : 122,y : 19, h : 10, w : 70})
+                                    style[2] = Object.assign({}, style[2],{x : 56,y : 31, h : 10, w : 70})
+                                    style[3] = Object.assign({}, style[3],{x : 144,y : 31, h : 10, w : 70})
+                                    style[4] = Object.assign({}, style[4],{x : 56,y : 40, h : 10, w : 70})
+                                    style[5] = Object.assign({}, style[5],{x : 144,y : 40, h : 10, w : 70})
+                                    style[6] = Object.assign({}, style[6],{x : 45,y : 50, h : 30, w : 90})
+                                    style[7] = Object.assign({}, style[7],{x : 166,y : 50, h : 7, w : 34})
+                                    style[8] = Object.assign({}, style[8],{x : 160,y : 57, h : 20, w : 28})
+
+
                                     style[6].bold = false
                                     style[6].size = 10
                                     config = {
