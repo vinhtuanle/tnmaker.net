@@ -27,8 +27,8 @@ Template Name: Phieu Trac Nghiem
     <!-- <script type="text/javascript" src="../wp-content/themes/customify/libs/jspdf.debug.js"></script> -->
     <!-- <script type="text/javascript" src="../wp-content/themes/customify/libs/ttfsupport.js"></script> -->
     <!-- <script type="text/javascript" src="../wp-content/themes/customify/libs/utf8.js"></script> -->
-    <script type="text/javascript" src="../wp-content/themes/customify/fonts/UVNAnhHai_R-normal.js"></script>
-    <script type="text/javascript" src="../wp-content/themes/customify/drawpdf/drawPDF.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/fonts/UVNAnhHai_R-normal.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/drawpdf/drawPDF.js"></script>
 
 
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
