@@ -29,7 +29,7 @@ Template Name: Phieu Trac Nghiem
 
 
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="/tnmaker">Trang chủ</a>
+		<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">Trang chủ</a>
 		
 	</nav>
     <div id="page" class="site">
