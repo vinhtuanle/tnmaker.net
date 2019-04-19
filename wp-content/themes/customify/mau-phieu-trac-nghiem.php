@@ -71,21 +71,22 @@ Template Name: Mau Phieu
                             </div>
 
                             <script>
+                                var current = 20
                                 function onChangeTypeForm() {
-                                    let tmp = document.getElementById("type_form").value
-                                    if (tmp == 20) {
+                                    current = document.getElementById("type_form").value
+                                    if (current == 20) {
                                         document.getElementById('preview_pdf').src = "<?php bloginfo('template_directory'); ?>/drawpdf/form20_vi_6sbd_nolabel.pdf"
                                     }
-                                    if (tmp == 40) {
+                                    if (current == 40) {
                                         document.getElementById('preview_pdf').src = "<?php bloginfo('template_directory'); ?>/drawpdf/form40_vi_6sbd_nolabel.pdf"
                                     }
-                                    if (tmp == 60) {
+                                    if (current == 60) {
                                         document.getElementById('preview_pdf').src = "<?php bloginfo('template_directory'); ?>/drawpdf/form60_vi_6sbd_nolabel.pdf"
                                     }
-                                    if (tmp == 100) {
+                                    if (current == 100) {
                                         document.getElementById('preview_pdf').src = "<?php bloginfo('template_directory'); ?>/drawpdf/form100_vi_6sbd_nolabel.pdf"
                                     }
-                                    if (tmp == 120) {
+                                    if (current == 120) {
                                         document.getElementById('preview_pdf').src = "<?php bloginfo('template_directory'); ?>/drawpdf/form120_vi_bgd_nolabel.pdf"
                                     }
                                 }
@@ -93,7 +94,36 @@ Template Name: Mau Phieu
 
                                 function onSubmitForm(e) {
                                     e.preventDefault()
-                                    
+                                    var element = document.createElement('a');
+
+                                    if (current == 20) {
+                                        
+                                    element.setAttribute('href', "<?php bloginfo('template_directory'); ?>/drawpdf/form20_vi_6sbd_nolabel.pdf");
+                                    element.setAttribute('download', "Phieu-20.pdf");
+                                    }
+                                    if (current == 40) {
+                                        element.setAttribute('href', "<?php bloginfo('template_directory'); ?>/drawpdf/form40_vi_6sbd_nolabel.pdf")
+                                        element.setAttribute('download', "Phieu-40.pdf");
+                                    }
+                                    if (current == 60) {
+                                        element.setAttribute('href', "<?php bloginfo('template_directory'); ?>/drawpdf/form60_vi_6sbd_nolabel.pdf")
+                                        element.setAttribute('download', "Phieu-60.pdf");
+                                    }
+                                    if (current == 100) {
+                                        element.setAttribute('href', "<?php bloginfo('template_directory'); ?>/drawpdf/form100_vi_6sbd_nolabel.pdf")
+                                        element.setAttribute('download', "Phieu-100.pdf");
+                                    }
+                                    if (current == 120) {
+                                        element.setAttribute('href', "<?php bloginfo('template_directory'); ?>/drawpdf/form120_vi_bgd_nolabel.pdf")
+                                        element.setAttribute('download', "Phieu-120.pdf");
+                                    }
+
+                                    element.style.display = 'none';
+                                    document.body.appendChild(element);
+
+                                    element.click();
+
+                                    document.body.removeChild(element);
                                 }
                             </script>
                         </div><!-- .page-content -->
