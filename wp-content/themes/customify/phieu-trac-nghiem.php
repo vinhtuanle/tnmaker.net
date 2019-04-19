@@ -325,6 +325,9 @@ Template Name: Phieu Trac Nghiem
 								
                                 function onSubmitForm(e) {
 									e.preventDefault()
+                                    for(let i=0;i<9;i++){
+                                        config.style[i].content = document.getElementById("input"+i).value
+                                    }
                                     console.log(config)
                                     // draw pdf
                                     drawPDF.init(config.form, config.number_of_question, config.alpha); 
