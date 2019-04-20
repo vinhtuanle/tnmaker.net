@@ -1,40 +1,21 @@
-var drawPDF = function () {
+var drawPDF = function (config) {
     var doc = new jsPDF();
-    // add font
     var w = 210;
     var h = 297;
-    var form = 100;
-    var sentence = 100;
-    var alpha = 137;
-    // init();
-    // drawBoundRect();
-    // drawInsideRect(form);
-    // drawCommonText(form,style);
-    // drawRectSbdMade(form, 0);
-    // drawRectSbdMade(form, 1)
-    // drawSbdMade(form);
-    // drawLabelNumber(form);
-    // drawCircle(form, sentence);
-    // drawLabel(form, 0);
-    // drawLabel(form, 1);                                                                               
-    this.init = function (f, s, a) {
-        w = 210;
-        h = 297;
-        form = f;
-        sentence = s;
-        alpha = a;
-        alert("init " + form + " " + sentence + " " + alpha);
-
-    }
-    this.savePDF = function (form) {
-        doc.save("phieu-trac-nghiem.pdf");
-        alert("saved");
-    }
-    this.getOutput = function()
-    {
-        return doc.output('datauristring',{"filename":"phieu-trac-nghiem.pdf"});
-    }
-    this.drawBoundRect = function () {
+    var form = config.form;
+    var sentence = config.number_of_question;
+    var alpha = config.alpha;
+    drawBoundRect();
+    drawInsideRect(form);
+    drawCommonText(form, config);
+    drawRectSbdMade(form, 0);
+    drawRectSbdMade(form, 1)
+    drawSbdMade(form);
+    drawLabelNumber(form);
+    drawCircle(form, sentence);
+    drawLabel(form, 0);
+    drawLabel(form, 1);
+    function drawBoundRect() {
         var widthRect = 5.465;
         doc.rect(29.299 - widthRect / 2, h - 260.594 - widthRect / 2, widthRect, widthRect, 'F');
         doc.rect(184.396 - widthRect / 2, h - 260.594 - widthRect / 2, widthRect, widthRect, 'F');
@@ -44,7 +25,7 @@ var drawPDF = function () {
         doc.rect(184.396 - widthRect / 2, h - 31.464 - widthRect / 2, widthRect, widthRect, 'F');
 
     }
-    this.drawInsideRect = function (form) {
+    function drawInsideRect(form) {
         var widthRect = 0;
         if (form == 20) {
             widthRect = 3.963;
@@ -88,69 +69,58 @@ var drawPDF = function () {
             doc.rect(136.537 - widthRect / 2, h - 39.826 - widthRect / 2, widthRect, widthRect, 'F');
         }
     }
-    this.drawRectTextFromHTML = function (isDrawRect, left, top, right, bottom, content, fontSize, isBold, isItalic) {
-        var withRect = right - left;
-        var heightRect = bottom - top;
+    function drawRectTextFromHTML(isDrawRect, x, y, w, h, content, fontSize, bold, italic) {
         // content rect
         if (isDrawRect) {
             doc.setDrawColor(0);
             doc.setFillColor(255, 255, 255);
-            doc.roundedRect(left, top, withRect, heightRect, 3, 3, 'FD');
+            doc.roundedRect(x, y, w, h, 3, 3, 'FD');
         }
         // content text
         doc.setTextColor(0);
         doc.setFontSize(fontSize);
-        doc.setFont("UVNAnhHai_R");
+        if (bold && italic) {
+            doc.setFont("TimeNewTimeNewRoman_BoldItalic");
+        }
+        else if (bold && !italic) {
+            doc.setFont("TimeNewRoman_Bold");
+        } else if (!bold && italic) {
+            doc.setFont("TimeNewRoman_Italic");
+        } else {
+            doc.setFont("TimeNewRoman_Normal");
+        }
         doc.setFontStyle("normal");
-        doc.text(content, left + 5, top + (heightRect / 2));
+        doc.text(content, x + 5, y + 5);
     }
-    this.drawCommonText = function (form, config) {
-        // so giao duc dao tao
-        drawRectTextFromHTML(false, 40, 21, 85, 25, config.style[0].content, "times", 10, true, true);
-
-        // ten truong 
-        drawRectTextFromHTML(false, 33, 25, 97, 32, "TRUONG THPT NAM DUYEN HA", "times", 10, true, true);
-
-        // phieu tra loi trac nghiem
-        drawRectTextFromHTML(false, 103, 20, 182, 32, "PHIEU TRA LOI TRAC NGHIEM", "times", 13, true, false);
-
-        // text kiem tra mon 
-        drawRectTextFromHTML(false, 50, 33, 110, 42, "KIEM TRA MON: ", "times", 13, true, false);
-
-        // text thoi gian
-        drawRectTextFromHTML(false, 120, 33, 165, 42, "THOI GIAN: ", "times", 13, true, false);
-
-        // text ho va ten
-        drawRectTextFromHTML(false, 40, 45, 75, 57, "HO VA TEN : ", "times", 13, true, false);
-
+    function drawCommonText(form, config) {
         // rect ho va ten
-        drawRectTextFromHTML(true, 77, 42, 130, 57, "", "times", 13, true, false);
-
-        // text lop
-        drawRectTextFromHTML(false, 135, 45, 170, 57, "LOP: ........... ", "times", 13, true, false);
-
+        drawRectTextFromHTML(true, 77, 42, 55, 13, "", "times", 13, true, false);
         if (form != 100) {
             // rect luu y
-            drawRectTextFromHTML(true, 42, 61, 120, 86, "LUU Y:", "times", 13, true, false);
-
+            drawRectTextFromHTML(true, 42, 59, 83, 27, "", "times", 13, false, false);
             // rect diem so
-            drawRectTextFromHTML(true, 127, 61, 160, 86, "", "times", 13, true, false);
-
-            // text diem so
-            drawRectTextFromHTML(false, 128, 76, 170, 57, "DIEM SO", "times", 13, true, false);
-
-
+            drawRectTextFromHTML(true, 137, 64, 33, 22, "", "times", 13, false, false);
         }
+        var index;
+        if (form != 100) {
+            index = 9;
+        }
+        else {
+            index = 6;
+        }
+        for (var i = 0; i < index; i++) {
+            drawRectTextFromHTML(false, config.style[i].x, config.style[i].y, config.style[i].w, h, config.style[i].content, config.style[i].size, config.style[i].bold, config.style[i].italic);
+        }
+        drawCopyRight();
     }
-    this.drawCopyRight = function()
-    {
+    function drawCopyRight() {
         // copy right
         doc.setFontSize(8);
         doc.setFont("times");
         doc.setFontStyle("italicbold");
         doc.text('© Copyright by TN Team', 94, 270.345);
     }
-    this.drawSbdMade = function (form) {
+    function drawSbdMade(form) {
         var lineWidth = 0.178;
         var startXText = 0;
         var startYText = 0;
@@ -227,11 +197,11 @@ var drawPDF = function () {
         }
         // so bao danh
         doc.setFontSize(fontSize);
-        doc.setFont("times");
-        doc.setFontStyle("bold");
-        doc.text('SO BAO DANH', startXText, startYText);
+        doc.setFont("TimeNewRoman_Bold");
+        doc.setFontStyle("normal");
+        doc.text('SỐ BÁO DANH', startXText, startYText);
         // made
-        doc.text('MA DE', startXText + distanceX, startYText);
+        doc.text('MÃ ĐỀ', startXText + distanceX, startYText);
 
         // rect so bao danh
         doc.setDrawColor(0);
@@ -250,11 +220,11 @@ var drawPDF = function () {
         doc.setLineWidth(lineWidth);
         doc.line(startXNotice, startYNotice, startXNotice, startYNotice + distanceNotice);
         doc.setFontSize(fontSize);
-        doc.setFont("times");
-        doc.setFontStyle("bold");
-        doc.text(startXNotice + paddingXNotice, startYNotice + paddingYNocice, 'TO KIN SO BAO DANH VA MA DE', null, 90);
+        doc.setFont("TimeNewRoman_Bold");
+        doc.setFontStyle("normal");
+        doc.text(startXNotice + paddingXNotice, startYNotice + paddingYNocice, 'TÔ KÍN SỐ BÁO DANH VÀ MÃ ĐỀ', null, 90);
     }
-    this.drawLabelNumber = function (form) {
+    function drawLabelNumber(form) {
         // draw abcd va so thu tu
         var startX = 0;
         var startY = 0;
@@ -380,7 +350,7 @@ var drawPDF = function () {
         }
 
     }
-    this.drawRectSbdMade = function (form, area) {
+    function drawRectSbdMade(form, area) {
         var widthRect = 0;
         var heightRect = 0;
         var startX = 0;
@@ -439,7 +409,7 @@ var drawPDF = function () {
         doc.setFillColor(255, 255, 255);
         doc.roundedRect(startX, startY, widthRect, heightRect, 1, 1, 'FD');
     }
-    this.drawLabel = function (form, area) {
+    function drawLabel(form, area) {
         var radius = 0;
         var startX = 0;
         var startY = 0;
@@ -522,7 +492,7 @@ var drawPDF = function () {
         }
 
     }
-    this.drawCircle = function (form, sentence) {
+    function drawCircle(form, sentence) {
         var radius = 0;
         var lineWidth = 0.178;
         var distanceX = 0;
@@ -733,4 +703,5 @@ var drawPDF = function () {
             }
         }
     }
+    return doc;
 }

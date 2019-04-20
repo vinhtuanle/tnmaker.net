@@ -24,7 +24,10 @@ Template Name: Phieu Trac Nghiem
 </head>
 
 <body>
-    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/fonts/UVNAnhHai_R-normal.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/fonts/TimeNewRoman_BoldItalic-normal.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/fonts/TimeNewRoman_Bold-normal.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/fonts/TimeNewRoman_Italic-normal.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/fonts/TimeNewRoman_Normal-normal.js"></script>
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/drawpdf/drawPDF.js"></script>
 
 
@@ -156,15 +159,14 @@ Template Name: Phieu Trac Nghiem
 							  </div>
 							</div>
                             <script>
-                                var config, current;
-                                var drawPDF = new drawPDF(); ;
+                                var config, current, drawPDFObject;
                                 init()
                                 function init() {
                                     document.getElementById("input0").value = "      SỞ GD-ĐT .....................\n TRƯỜNG THPT ..........................."
                                     document.getElementById("input1").value = " PHIẾU TRẢ LỜI TRẮC NGHIỆM"
-                                    document.getElementById("input2").value = "      KIỂM TRA MÔN ............................."
+                                    document.getElementById("input2").value = "      KIỂM TRA MÔN ........................."
                                     document.getElementById("input3").value = " THỜI GIAN...................."
-                                    document.getElementById("input4").value = "      HỌ VÀ TÊN ......................................."
+                                    document.getElementById("input4").value = "      HỌ VÀ TÊN"
                                     document.getElementById("input5").value = " LỚP...................."
 
                                     document.getElementById("input6").value = "Lưu ý:\n-Ghi đầy đủ các mục, giữ phiếu phẳng\n-Bôi đen đáp án tương ứng với số câu trong đề\n- Bài kiểm tra được chấm bằng máy, học sinh tô\n đậm, vừa khít với ô tròn giới hạn. TUYỆT ĐỐI\n không sửa chữa đáp án."
@@ -187,15 +189,15 @@ Template Name: Phieu Trac Nghiem
                                             h: 10,
                                         })
                                     }
-                                    style[0] = Object.assign({}, style[0],{x : 40,y : 19, h : 10, w : 70})
-                                    style[1] = Object.assign({}, style[1],{x : 122,y : 19, h : 10, w : 70})
-                                    style[2] = Object.assign({}, style[2],{x : 56,y : 31, h : 10, w : 70})
-                                    style[3] = Object.assign({}, style[3],{x : 144,y : 31, h : 10, w : 70})
-                                    style[4] = Object.assign({}, style[4],{x : 56,y : 40, h : 10, w : 70})
-                                    style[5] = Object.assign({}, style[5],{x : 144,y : 40, h : 10, w : 70})
-                                    style[6] = Object.assign({}, style[6],{x : 45,y : 50, h : 30, w : 90})
-                                    style[7] = Object.assign({}, style[7],{x : 166,y : 50, h : 7, w : 34})
-                                    style[8] = Object.assign({}, style[8],{x : 160,y : 57, h : 20, w : 28})
+                                    style[0] = Object.assign({}, style[0],{x : 35,y : 21, h : 10, w : 70})
+                                    style[1] = Object.assign({}, style[1],{x : 100,y : 23, h : 10, w : 70})
+                                    style[2] = Object.assign({}, style[2],{x : 40,y : 33, h : 10, w : 70})
+                                    style[3] = Object.assign({}, style[3],{x : 120,y : 33, h : 10, w : 70})
+                                    style[4] = Object.assign({}, style[4],{x : 40,y : 45, h : 10, w : 70})
+                                    style[5] = Object.assign({}, style[5],{x : 135,y : 45, h : 10, w : 70})
+                                    style[6] = Object.assign({}, style[6],{x : 42,y : 58, h : 30, w : 90})
+                                    style[7] = Object.assign({}, style[7],{x : 138,y : 56, h : 7, w : 34})
+                                    style[8] = Object.assign({}, style[8],{x : 127,y : 61, h : 20, w : 28})
 
 
                                     style[6].bold = false
@@ -250,7 +252,9 @@ Template Name: Phieu Trac Nghiem
                                         number_ques.setAttribute("max", 20)
                                         config.number_of_question = 20
                                         config.form = 20
-										document.getElementById("input6").style.display =''
+                                        document.getElementById("input6").style.display =''
+                                        document.getElementById("input7").style.display =''
+                                        document.getElementById("input8").style.display =''
                                         document.getElementById("preview_html").style = "background-size:contain  ;background-image: url('<?php bloginfo('template_directory'); ?>/img/form20_vi_6sbd_nolabel.jpg')"
                                     }
 
@@ -259,7 +263,9 @@ Template Name: Phieu Trac Nghiem
                                         number_ques.setAttribute("max", 40)
                                         config.number_of_question = 40
                                         config.form = 40
-										document.getElementById("input6").style.display =''
+                                        document.getElementById("input6").style.display =''
+                                        document.getElementById("input7").style.display =''
+                                        document.getElementById("input8").style.display =''
                                         document.getElementById("preview_html").style = "background-size:contain  ;background-image: url('<?php bloginfo('template_directory'); ?>/img/form40_vi_6sbd_nolabel.jpg')"
                                     }
 
@@ -268,7 +274,9 @@ Template Name: Phieu Trac Nghiem
                                         number_ques.setAttribute("max", 60)
                                         config.number_of_question = 60
                                         config.form = 60
-										document.getElementById("input6").style.display =''
+                                        document.getElementById("input6").style.display =''
+                                        document.getElementById("input7").style.display =''
+                                        document.getElementById("input8").style.display =''
                                         document.getElementById("preview_html").style = "background-size:contain  ;background-image: url('<?php bloginfo('template_directory'); ?>/img/form60_vi_6sbd_nolabel.jpg')"
                                     }
 
@@ -277,7 +285,9 @@ Template Name: Phieu Trac Nghiem
                                         number_ques.setAttribute("max", 100)
                                         config.number_of_question = 100
                                         config.form = 100
-										document.getElementById("input6").style.display ='none'
+                                        document.getElementById("input6").style.display ='none'
+                                        document.getElementById("input7").style.display ='none'
+                                        document.getElementById("input8").style.display ='none'
                                         document.getElementById("preview_html").style = "background-size:contain  ;background-image: url('<?php bloginfo('template_directory'); ?>/img/form100_vi_6sbd_nolabel.jpg')"
                                     }
                                 }
@@ -330,36 +340,13 @@ Template Name: Phieu Trac Nghiem
                                     }
                                     console.log(config)
                                     // draw pdf
-                                    drawPDF.init(config.form, config.number_of_question, config.alpha); 
-                                    drawPDF.drawBoundRect();
-                                    drawPDF.drawInsideRect(config.form);
-                                    for (var i = 0; i < 1; i++)
-                                    {
-                                        drawPDF.drawRectTextFromHTML(false,
-                                        config.style[i].x,
-                                        config.style[i].y,
-                                        config.style[i].x + config.style[i].w,
-                                        config.style[i].y+ config.style[i].h,
-                                        config.style[i].content,
-                                        config.style[i].size,            
-                                        config.style[i].bold,
-                                        config.style[i].italic);
-                                    }
-                                    drawPDF.drawCopyRight();
-                                    drawPDF.drawRectSbdMade(config.form, 0);
-                                    drawPDF.drawRectSbdMade(config.form, 1)
-                                    drawPDF.drawSbdMade(config.form);
-                                    drawPDF.drawLabelNumber(config.form);
-                                    drawPDF.drawCircle(config.form, config.number_of_question);
-                                    drawPDF.drawLabel(config.form, 0);
-                                    drawPDF.drawLabel(config.form, 1);
-                                    // let string = output.output('datauristring',{"filename":"phieu-trac-nghiem.pdf"})
-                                    let string = drawPDF.getOutput();
+                                    drawPDFObject = new drawPDF(config);
+                                    let string = drawPDFObject.output('datauristring',{"filename":"phieu-trac-nghiem.pdf"})
 									document.getElementById('modal_show_pdf').src = string
 									$("#exampleModal").modal('show')
                                 } 
                                 function download_template(){
-                                    drawPDF.savePDF(config.form);													 
+                                    drawPDFObject.savePDF("phieu-trac-nghiem"+config.form);													 
 								}
                                 
                             </script>
