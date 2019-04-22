@@ -56,7 +56,8 @@ Template Name: Mau Phieu
                                             </select>
                                         </div>
                                         <div class="row">
-                                            <button type="submit" style="font-size : 18px" class="btn btn-success col-md-12 col-xs-12"><i class="fas fa-download"></i>Tải phiếu chấm</button>
+                                            <a href="<?php echo esc_url(home_url('/')); ?>/phieu/" style="font-size : 18px" class="btn btn-primary btn-lg col-md-6 col-xs-12" role="button" aria-pressed="true"><i class="fas fa-edit"></i>Chỉnh sửa phiếu</a>
+                                            <button type="submit" style="font-size : 18px" class="btn btn-success col-md-6 col-xs-12"><i class="fas fa-download"></i>Tải phiếu chấm</button>
                                         </div>
                                     </form>
                                 </div>
@@ -72,6 +73,7 @@ Template Name: Mau Phieu
 
                             <script>
                                 var current = 20
+
                                 function onChangeTypeForm() {
                                     current = document.getElementById("type_form").value
                                     if (current == 20) {
@@ -97,9 +99,9 @@ Template Name: Mau Phieu
                                     var element = document.createElement('a');
 
                                     if (current == 20) {
-                                        
-                                    element.setAttribute('href', "<?php bloginfo('template_directory'); ?>/drawpdf/form20_vi_6sbd_nolabel.pdf");
-                                    element.setAttribute('download', "Phieu-20.pdf");
+
+                                        element.setAttribute('href', "<?php bloginfo('template_directory'); ?>/drawpdf/form20_vi_6sbd_nolabel.pdf");
+                                        element.setAttribute('download', "Phieu-20.pdf");
                                     }
                                     if (current == 40) {
                                         element.setAttribute('href', "<?php bloginfo('template_directory'); ?>/drawpdf/form40_vi_6sbd_nolabel.pdf")
