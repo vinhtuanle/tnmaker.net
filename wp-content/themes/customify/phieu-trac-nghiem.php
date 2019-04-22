@@ -104,15 +104,15 @@ Template Name: Phieu Trac Nghiem
                                     <div class='resize-container' id='resize-container'>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <textarea onClick="edit(0)" row="2" id='input0' class="text-area-noborder" style="margin-top : 19mm;margin-left : 40mm;font-size: 12px;font-weight: bold;"></textarea>
+                                                <textarea onClick="edit(0)" row="2" id='input0' class="text-area-noborder" style="margin-top : 19mm;margin-left : 40mm;font-size: 10px;font-weight: bold;"></textarea>
                                             </div>
                                             <div class="col-md-6">
-                                                <textarea onClick="edit(1)" row="2" id='input1' class="text-area-noborder" style="margin-top : 19mm;font-size:12px; font-weight: bold;"></textarea>
+                                                <textarea onClick="edit(1)" row="2" id='input1' class="text-area-noborder" style="margin-top : 23mm;font-size:13px; font-weight: bold;"></textarea>
                                             </div>
                                         </div>
                                         <div class="row" style="height: 8mm !important;">
                                             <div class="col-md-7">
-                                                <textarea onClick="edit(2)" row="1" id='input2' class="text-area-noborder" style="margin-top : 0mm;margin-left : 50mm;font-size: 12px; font-weight: bold;"></textarea>
+                                                <textarea onClick="edit(2)" row="1" id='input2' class="text-area-noborder" style="margin-top : 0mm;margin-left : 40mm;font-size: 12px; font-weight: bold;"></textarea>
                                             </div>
                                             <div class="col-md-5">
                                                 <textarea onClick="edit(3)" row="1" id='input3' class="text-area-noborder" style="margin-top : 0mm;font-size:12px;font-weight: bold;"></textarea>
@@ -120,19 +120,19 @@ Template Name: Phieu Trac Nghiem
                                         </div>
                                         <div class="row" style="height: 8mm !important;">
                                             <div class="col-md-7">
-                                                <textarea onClick="edit(4)" row="1" id='input4' class="text-area-noborder" style="margin-top : 0mm;margin-left : 50mm;font-size: 12px;font-weight: bold;"></textarea>
+                                                <textarea onClick="edit(4)" row="1" id='input4' class="text-area-noborder" style="margin-top : 5mm;margin-left : 40mm;font-size: 12px;font-weight: bold;"></textarea>
                                             </div>
                                             <div class="col-md-5">
-                                                <textarea onClick="edit(5)" row="1" id='input5' class="text-area-noborder" style="margin-top : 0mm;font-size:12px;font-weight: bold;"></textarea>
+                                                <textarea onClick="edit(5)" row="1" id='input5' class="text-area-noborder" style="margin-top : 5mm;font-size:12px;font-weight: bold;"></textarea>
                                             </div>
                                         </div>
 
                                         <div class="row">
                                             <div class="col-md-7">
-                                                <textarea onClick="edit(6)" row="6" class="text-area-border" id='input6' style="margin-top : 0mm;margin-left : 40mm;font-size: 10px;max-width:80mm;min-height: 100px"></textarea>
+                                                <textarea onClick="edit(6)" row="6" class="text-area-border" id='input6' style="margin-top : 10mm;margin-left : 40mm;font-size: 10px;max-width:80mm;min-height: 100px"></textarea>
                                             </div>
                                             <div class="col-md-5">
-                                                <textarea onClick="edit(7)" row="1" id='input7' class="text-area-noborder" style="margin-top : 0mm;margin-left:20mm;font-size:12px;font-weight: bold; width : 30mm;height : 6mm;"></textarea>
+                                                <textarea onClick="edit(7)" row="1" id='input7' class="text-area-noborder" style="margin-top : 10mm;margin-left:20mm;font-size:12px;font-weight: bold; width : 30mm;height : 6mm;"></textarea>
                                                 <textarea onClick="edit(8)" row="2" id='input8' class="text-area-border" disabled style="margin-top : 0mm;margin-left:15mm;font-size:12px;font-weight: bold;width : 25mm; height : 18mm;"></textarea>
                                             </div>
                                         </div>
@@ -165,9 +165,9 @@ Template Name: Phieu Trac Nghiem
                                     document.getElementById("input0").value = "      SỞ GD-ĐT .....................\n TRƯỜNG THPT ..........................."
                                     document.getElementById("input1").value = " PHIẾU TRẢ LỜI TRẮC NGHIỆM"
                                     document.getElementById("input2").value = "      KIỂM TRA MÔN ........................."
-                                    document.getElementById("input3").value = " THỜI GIAN...................."
-                                    document.getElementById("input4").value = "      HỌ VÀ TÊN"
-                                    document.getElementById("input5").value = " LỚP...................."
+                                    document.getElementById("input3").value = " THỜI GIAN ...................."
+                                    document.getElementById("input4").value = "      HỌ VÀ TÊN  ........................."
+                                    document.getElementById("input5").value = " LỚP ...................."
 
                                     document.getElementById("input6").value = "Lưu ý:\n-Ghi đầy đủ các mục, giữ phiếu phẳng\n-Bôi đen đáp án tương ứng với số câu trong đề\n- Bài kiểm tra được chấm bằng máy, học sinh tô\n đậm, vừa khít với ô tròn giới hạn. TUYỆT ĐỐI\n không sửa chữa đáp án."
                                     document.getElementById("input7").value = " ĐIỂM SỐ"
@@ -189,19 +189,19 @@ Template Name: Phieu Trac Nghiem
                                             h: 10,
                                         })
                                     }
-                                    style[0] = Object.assign({}, style[0],{x : 35,y : 21, h : 10, w : 70})
-                                    style[1] = Object.assign({}, style[1],{x : 100,y : 23, h : 10, w : 70})
-                                    style[2] = Object.assign({}, style[2],{x : 40,y : 33, h : 10, w : 70})
-                                    style[3] = Object.assign({}, style[3],{x : 120,y : 33, h : 10, w : 70})
-                                    style[4] = Object.assign({}, style[4],{x : 40,y : 45, h : 10, w : 70})
-                                    style[5] = Object.assign({}, style[5],{x : 135,y : 45, h : 10, w : 70})
-                                    style[6] = Object.assign({}, style[6],{x : 42,y : 58, h : 30, w : 90})
-                                    style[7] = Object.assign({}, style[7],{x : 138,y : 56, h : 7, w : 34})
-                                    style[8] = Object.assign({}, style[8],{x : 127,y : 61, h : 20, w : 28})
-
-
+                                    style[0] = Object.assign({}, style[0],{x : 35,y : 21, h : 10, w : 70, size: 10})
+                                    style[1] = Object.assign({}, style[1],{x : 95,y : 21, h : 10, w : 70, size: 13})
+                                    style[2] = Object.assign({}, style[2],{x : 40,y : 33, h : 10, w : 70, size: 12})
+                                    style[3] = Object.assign({}, style[3],{x : 120,y : 33, h : 10, w : 70, size: 12})
+                                    style[4] = Object.assign({}, style[4],{x : 40,y : 45, h : 10, w : 70, size: 12})
+                                    style[5] = Object.assign({}, style[5],{x : 135,y : 45, h : 10, w : 70, size: 12})
+                                    style[6] = Object.assign({}, style[6],{x : 42,y : 58, h : 30, w : 90, size: 10})
+                                    style[7] = Object.assign({}, style[7],{x : 138,y : 56, h : 7, w : 34, size: 12})
+                                    style[8] = Object.assign({}, style[8],{x : 127,y : 61, h : 20, w : 28, size: 12})
                                     style[6].bold = false
-                                    style[6].size = 10
+                                    style[0].size = 10
+                                    style[1].size = 13;
+                                    style[6].size = 10;
                                     config = {
                                         form: 20,
                                         number_of_question: 20,
@@ -259,7 +259,7 @@ Template Name: Phieu Trac Nghiem
                                     }
 
                                     if (tmp == 40) {
-                                        number_ques.setAttribute("min", 21)
+                                        number_ques.setAttribute("min", 1)
                                         number_ques.setAttribute("max", 40)
                                         config.number_of_question = 40
                                         config.form = 40
@@ -270,7 +270,7 @@ Template Name: Phieu Trac Nghiem
                                     }
 
                                     if (tmp == 60) {
-                                        number_ques.setAttribute("min", 41)
+                                        number_ques.setAttribute("min", 1)
                                         number_ques.setAttribute("max", 60)
                                         config.number_of_question = 60
                                         config.form = 60
@@ -281,7 +281,7 @@ Template Name: Phieu Trac Nghiem
                                     }
 
                                     if (tmp == 100) {
-                                        number_ques.setAttribute("min", 61)
+                                        number_ques.setAttribute("min", 1)
                                         number_ques.setAttribute("max", 100)
                                         config.number_of_question = 100
                                         config.form = 100
@@ -330,7 +330,7 @@ Template Name: Phieu Trac Nghiem
                                 }
 
                                 function change_number_questtion() {
-                                    config.number_of_question = document.getElementById("number_question").value
+                                    config.number_of_question = parseInt(document.getElementById("number_question").value)
                                 }
 								
                                 function onSubmitForm(e) {
@@ -346,7 +346,7 @@ Template Name: Phieu Trac Nghiem
 									$("#exampleModal").modal('show')
                                 } 
                                 function download_template(){
-                                    drawPDFObject.savePDF("phieu-trac-nghiem"+config.form);													 
+                                    drawPDFObject.save("phieu-trac-nghiem-"+config.form);													 
 								}
                                 
                             </script>
