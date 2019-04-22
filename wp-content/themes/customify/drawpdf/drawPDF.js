@@ -5,13 +5,14 @@ var drawPDF = function (config) {
     var form = config.form;
     var sentence = config.number_of_question;
     var alpha = config.alpha;
+    alert("form: " + form + " sentence: " + sentence + " alpha: " + alpha);
     drawBoundRect();
     drawInsideRect(form);
     drawCommonText(form, config);
     drawRectSbdMade(form, 0);
     drawRectSbdMade(form, 1)
     drawSbdMade(form);
-    drawLabelNumber(form);
+    drawLabelNumber(form, sentence);
     drawCircle(form, sentence);
     drawLabel(form, 0);
     drawLabel(form, 1);
@@ -69,37 +70,37 @@ var drawPDF = function (config) {
             doc.rect(136.537 - widthRect / 2, h - 39.826 - widthRect / 2, widthRect, widthRect, 'F');
         }
     }
-    function drawRectTextFromHTML(isDrawRect, x, y, w, h, content, fontSize, bold, italic) {
+    function drawRectTextFromHTML(isDrawRect, x, y, w, h, content, fontSize, bold, italic, show) {
         // content rect
         if (isDrawRect) {
             doc.setDrawColor(0);
             doc.setFillColor(255, 255, 255);
             doc.roundedRect(x, y, w, h, 3, 3, 'FD');
         }
-        // content text
-        doc.setTextColor(0);
-        doc.setFontSize(fontSize);
-        if (bold && italic) {
-            doc.setFont("TimeNewTimeNewRoman_BoldItalic");
+        if (show) {
+            // content text
+            doc.setTextColor(0);
+            doc.setFontSize(fontSize);
+            if (bold && italic) {
+                doc.setFont("TimeNewRoman_BoldItalic");
+            }
+            else if (bold && !italic) {
+                doc.setFont("TimeNewRoman_Bold");
+            } else if (!bold && italic) {
+                doc.setFont("TimeNewRoman_Italic");
+            } else {
+                doc.setFont("TimeNewRoman_Normal");
+            }
+            doc.setFontStyle("normal");
+            doc.text(content, x + 5, y + 5);
         }
-        else if (bold && !italic) {
-            doc.setFont("TimeNewRoman_Bold");
-        } else if (!bold && italic) {
-            doc.setFont("TimeNewRoman_Italic");
-        } else {
-            doc.setFont("TimeNewRoman_Normal");
-        }
-        doc.setFontStyle("normal");
-        doc.text(content, x + 5, y + 5);
     }
     function drawCommonText(form, config) {
-        // rect ho va ten
-        drawRectTextFromHTML(true, 77, 42, 55, 13, "", "times", 13, true, false);
         if (form != 100) {
             // rect luu y
-            drawRectTextFromHTML(true, 42, 59, 83, 27, "", "times", 13, false, false);
+            drawRectTextFromHTML(true, 42, 59, 83, 27, "", "times", 13, false, false, true);
             // rect diem so
-            drawRectTextFromHTML(true, 137, 64, 33, 22, "", "times", 13, false, false);
+            drawRectTextFromHTML(true, 137, 64, 33, 22, "", "times", 13, false, false, true);
         }
         var index;
         if (form != 100) {
@@ -109,8 +110,11 @@ var drawPDF = function (config) {
             index = 6;
         }
         for (var i = 0; i < index; i++) {
-            drawRectTextFromHTML(false, config.style[i].x, config.style[i].y, config.style[i].w, h, config.style[i].content, config.style[i].size, config.style[i].bold, config.style[i].italic);
+            drawRectTextFromHTML(false, config.style[i].x, config.style[i].y, config.style[i].w, h, config.style[i].content, config.style[i].size, config.style[i].bold, config.style[i].italic, config.style[i].show);
         }
+        // rect ho va ten
+        drawRectTextFromHTML(true, 77, 42, 55, 13, "", "times", 13, true, false);
+
         drawCopyRight();
     }
     function drawCopyRight() {
@@ -224,7 +228,7 @@ var drawPDF = function (config) {
         doc.setFontStyle("normal");
         doc.text(startXNotice + paddingXNotice, startYNotice + paddingYNocice, 'TÔ KÍN SỐ BÁO DANH VÀ MÃ ĐỀ', null, 90);
     }
-    function drawLabelNumber(form) {
+    function drawLabelNumber(form, sentence) {
         // draw abcd va so thu tu
         var startX = 0;
         var startY = 0;
@@ -336,15 +340,18 @@ var drawPDF = function (config) {
             doc.setFontStyle("bold");
             doc.setFontSize(fontSizeNumber);
             for (var j = 0; j < 10; j++) {
-                if ((10 * i) + j + 1 == 10) {
-                    doc.text(startX - 1.3 * distanceX, startY + (j + 1) * distanceY, (10 * i) + j + 1 + '');
-                } else if ((10 * i) + j + 1 < 10) {
-                    doc.text(startX - 1.07 * distanceX, startY + (j + 1) * distanceY, (10 * i) + j + 1 + '');
-                } else if ((10 * i) + j + 1 == 100) {
-                    doc.text(startX - 1.60 * distanceX, startY + (j + 1) * distanceY, (10 * i) + j + 1 + '');
-                }
-                else {
-                    doc.text(startX - 1.2 * distanceX, startY + (j + 1) * distanceY, (10 * i) + j + 1 + '');
+                if ((10 * i + j) < sentence) {
+                    console.log(10 * i + j);
+                    if ((10 * i) + j + 1 == 10) {
+                        doc.text(startX - 1.3 * distanceX, startY + (j + 1) * distanceY, (10 * i) + j + 1 + '');
+                    } else if ((10 * i) + j + 1 < 10) {
+                        doc.text(startX - 1.07 * distanceX, startY + (j + 1) * distanceY, (10 * i) + j + 1 + '');
+                    } else if ((10 * i) + j + 1 == 100) {
+                        doc.text(startX - 1.60 * distanceX, startY + (j + 1) * distanceY, (10 * i) + j + 1 + '');
+                    }
+                    else {
+                        doc.text(startX - 1.2 * distanceX, startY + (j + 1) * distanceY, (10 * i) + j + 1 + '');
+                    }
                 }
             }
         }
@@ -529,7 +536,9 @@ var drawPDF = function (config) {
                     startY = h - 112.175;
                 }
                 for (var m = 0; m < row; m++) {
-                    if (10 * i + m < sentence + 20) {
+                    if ((10 * i + m) < sentence + 20) {
+                        // console.log((10 * i + m));
+                        console.log(sentence + 20);
                         for (var n = 0; n < col; n++) {
                             doc.circle(startX + n * distanceX, startY + m * distanceY, radius, 'FD');
                         }
@@ -578,7 +587,7 @@ var drawPDF = function (config) {
                     startY = h - 104.185;
                 }
                 for (var m = 0; m < row; m++) {
-                    if (10 * i + m < sentence + 20) {
+                    if ((10 * i + m) < (sentence + 20)) {
                         for (var n = 0; n < col; n++) {
                             doc.circle(startX + n * distanceX, startY + m * distanceY, radius, 'FD');
                         }
@@ -627,7 +636,7 @@ var drawPDF = function (config) {
                     startY = h - 104.185;
                 }
                 for (var m = 0; m < row; m++) {
-                    if (10 * i + m < sentence + 20) {
+                    if ((10 * i + m) < (sentence + 20)) {
                         for (var n = 0; n < col; n++) {
                             doc.circle(startX + n * distanceX, startY + m * distanceY, radius, 'FD');
                         }
@@ -693,7 +702,7 @@ var drawPDF = function (config) {
 
                 }
                 for (var m = 0; m < row; m++) {
-                    if (10 * i + m < sentence + 20) {
+                    if ((10 * i + m) < (sentence + 20)) {
                         for (var n = 0; n < col; n++) {
                             doc.circle(startX + n * distanceX, startY + m * distanceY, radius, 'FD');
                         }
